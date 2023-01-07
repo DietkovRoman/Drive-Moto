@@ -451,6 +451,693 @@ body {
   z-index: 2;
 }
 
+.footer_links_03 {
+  padding-top: 35px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  z-index: 1;
+}
+@media (max-width: 992px) {
+  .footer_links_03 {
+    flex-direction: column;
+    padding-top: 10px;
+  }
+}
+.footer_links_03 a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #48494D;
+  flex: 1 0 auto;
+}
+@media (max-width: 576px) {
+  .footer_links_03 a {
+    text-align: center;
+  }
+}
+.footer_links_03 a:hover {
+  text-decoration: underline;
+}
+.footer_links_03 a:last-child {
+  text-align: end;
+}
+@media (max-width: 992px) {
+  .footer_links_03 a:last-child {
+    text-align: center;
+  }
+}
+
+.pg_swiper_wrapper {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  position: relative;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01, .pg_swiper_wrapper .popular_goods_swiper_02,
+.pg_swiper_wrapper .popular_goods_swiper_03, .pg_swiper_wrapper .popular_goods_swiper_04,
+.pg_swiper_wrapper .popular_goods_swiper_05, .pg_swiper_wrapper .popular_goods_swiper_06,
+.pg_swiper_wrapper .buy_with_swiper_01, .pg_swiper_wrapper .buy_with_swiper_02,
+.pg_swiper_wrapper .buy_with_swiper_03, .pg_swiper_wrapper .buy_with_swiper_04,
+.pg_swiper_wrapper .buy_with_swiper_05, .pg_swiper_wrapper .buy_with_swiper_06 {
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  position: relative;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper {
+  align-items: center;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide {
+  display: flex;
+  max-height: 410px;
+  justify-content: center;
+  /*max-width: 270px;
+
+  @media (max-width: 320px) {
+    display: block;
+    max-width: none;
+  }*/
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item {
+  display: flex;
+  position: relative;
+  flex: 0 1 270px;
+  /*&::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.05);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+
+    @media (max-width: 992px) {
+      opacity: 1;
+      visibility: visible;
+    }
+  }*/
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  width: 24px;
+  height: 22px;
+  background-image: url(../img/icons/like.svg);
+  transition: all 0.3s ease 0s;
+  z-index: 100;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like:hover, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like:hover,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like:hover, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like:hover,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like:hover, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like:hover,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like:hover, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like:hover,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like:hover, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like:hover,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like:hover, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper .pg_item_like:hover {
+  background-image: url(../img/icons/like_bg.svg);
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper ._active, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper ._active,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper ._active, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper ._active,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper ._active, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper ._active,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper ._active, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper ._active,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper ._active, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper ._active,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper ._active, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_like_wrapper ._active {
+  background-image: url(../img/icons/like_bg.svg);
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_not_available, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_not_available,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_not_available, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_not_available,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_not_available, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_not_available,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_not_available, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_not_available,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_not_available, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_not_available,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_not_available, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_not_available {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  display: none;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container {
+  padding: 37px 20px 15px 20px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover {
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::before, .pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::after, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::before, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::after,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::before,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::after, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::before, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::after,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::before,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::after, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::before, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::after,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::before,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::after, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::before, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::after,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::before,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::after, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::before, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::after,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::before,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::after, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::before, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::after {
+  opacity: 0;
+  visibility: hidden;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_decor, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_decor,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_decor, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_decor,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_decor, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_decor,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_decor, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_decor,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_decor, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_decor,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_decor, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_decor {
+  opacity: 0;
+  visibility: hidden;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_empty, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_empty,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_empty, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_empty,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_empty, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_empty,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_empty, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_empty,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_empty, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_empty,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_empty, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_empty {
+  opacity: 0;
+  visibility: hidden;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .show_product, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .show_product,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .show_product, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .show_product,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .show_product, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .show_product,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .show_product, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .show_product,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .show_product, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .show_product,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .show_product, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .show_product {
+  opacity: 0.9;
+  visibility: visible;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_title, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_title,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_title, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_title,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_title, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_title,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_title, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_title,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_title, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_title,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_title, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_title {
+  color: #1C62CD;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_price, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_price,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_price, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_price,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_price, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_price,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_price, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_price,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_price, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_price,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_price, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_price {
+  color: #1C62CD;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::before, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::before,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::before, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::before,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::before, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::before,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::before, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::before,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::before, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::before,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::before, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #CDCDCD;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::after, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::after,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::after, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::after,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::after, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::after,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::after, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::after,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::after, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::after,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::after, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #CDCDCD;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::before, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::before,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::before, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::before,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::before, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::before,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::before, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::before,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::before, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::before,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::before, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #CDCDCD;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::after, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::after,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::after, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::after,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::after, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::after,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::after, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::after,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::after, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::after,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::after, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background-color: #CDCDCD;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_empty, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_empty,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_empty, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_empty,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_empty, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_empty,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_empty, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_empty,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_empty, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_empty,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_empty, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_empty {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  z-index: 1;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_sale, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_sale,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_sale, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_sale,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_sale, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_sale,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_sale, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_sale,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_sale, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_sale,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_sale, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_sale {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 63px;
+  height: 25px;
+  background-color: #1C62CD;
+  z-index: 2;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.07em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_cart, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_cart,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_cart, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_cart,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_cart, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_cart,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_cart, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_cart,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_cart, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_cart,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_cart, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_cart {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  height: 40px;
+  background-color: #1C62CD;
+  border-radius: 10px 0px 0px 0px;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo {
+  display: flex;
+  justify-content: center;
+  flex: 0 1 200px;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo img, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo img,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo img, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo img,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo img, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo img,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo img, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo img,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo img, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo img,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo img, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo img {
+  width: auto;
+  height: auto;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_title, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_title,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_title, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_title,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_title, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_title,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_title, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_title,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_title, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_title,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_title, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #2F3035;
+  flex: 1 1 auto;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_price, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_price,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_price, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_price,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_price, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_price,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_price, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_price,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_price, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_price,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_price, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 15px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #2F3035;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .not_available, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .not_available,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .not_available, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .not_available,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .not_available, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .not_available,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .not_available, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .not_available,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .not_available, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .not_available,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .not_available, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .not_available {
+  position: relative;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container {
+  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::before, .pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::after, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::before, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::after,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::before,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::after, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::before, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::after,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::before,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::after, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::before, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::after,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::before,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::after, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::before, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::after,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::before,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::after, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::before, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::after,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::before,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::after, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::before, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::after {
+  opacity: 0;
+  visibility: hidden;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_decor, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_decor,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_decor, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_decor,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_decor, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_decor,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_decor, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_decor,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_decor, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_decor,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_decor, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_decor {
+  opacity: 0;
+  visibility: hidden;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_empty, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_empty,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_empty, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_empty,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_empty, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_empty,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_empty, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_empty,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_empty, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_empty,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_empty, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_empty {
+  opacity: 0;
+  visibility: hidden;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .not_available:hover .show_product, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .not_available:hover .show_product,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .not_available:hover .show_product, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .not_available:hover .show_product,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .not_available:hover .show_product, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .not_available:hover .show_product,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .not_available:hover .show_product, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .not_available:hover .show_product,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .not_available:hover .show_product, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .not_available:hover .show_product,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .not_available:hover .show_product, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .not_available:hover .show_product {
+  opacity: 0.9;
+  visibility: visible;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_content .pg_item_title, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_content .pg_item_title,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_content .pg_item_title, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_content .pg_item_title,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_content .pg_item_title, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_content .pg_item_title,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_content .pg_item_title, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_content .pg_item_title,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_content .pg_item_title, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_content .pg_item_title,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_content .pg_item_title, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .not_available:hover .pg_item_content .pg_item_title {
+  color: #1C62CD;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available {
+  display: flex;
+  gap: 13px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  z-index: 2;
+  max-width: 99%;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  cursor: pointer;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available span, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available span,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available span, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available span,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available span, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available span,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available span, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available span,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available span, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available span,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available span, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2F3035;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #1C62CD;
+  text-decoration: underline;
+  transition: all 0.3s ease 0s;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn:hover, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn:hover,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn:hover, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn:hover,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn:hover, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn:hover,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn:hover, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn:hover,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn:hover, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn:hover,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn:hover, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn:hover {
+  text-shadow: 0 0 0.45px #2F3035, 0 0 0.45px #2F3035;
+}
+.pg_swiper_wrapper .popular_goods_swiper_01 .swiper-wrapper .swiper-slide .not_available .pg_item_container .pg_item_cart, .pg_swiper_wrapper .popular_goods_swiper_02 .swiper-wrapper .swiper-slide .not_available .pg_item_container .pg_item_cart,
+.pg_swiper_wrapper .popular_goods_swiper_03 .swiper-wrapper .swiper-slide .not_available .pg_item_container .pg_item_cart, .pg_swiper_wrapper .popular_goods_swiper_04 .swiper-wrapper .swiper-slide .not_available .pg_item_container .pg_item_cart,
+.pg_swiper_wrapper .popular_goods_swiper_05 .swiper-wrapper .swiper-slide .not_available .pg_item_container .pg_item_cart, .pg_swiper_wrapper .popular_goods_swiper_06 .swiper-wrapper .swiper-slide .not_available .pg_item_container .pg_item_cart,
+.pg_swiper_wrapper .buy_with_swiper_01 .swiper-wrapper .swiper-slide .not_available .pg_item_container .pg_item_cart, .pg_swiper_wrapper .buy_with_swiper_02 .swiper-wrapper .swiper-slide .not_available .pg_item_container .pg_item_cart,
+.pg_swiper_wrapper .buy_with_swiper_03 .swiper-wrapper .swiper-slide .not_available .pg_item_container .pg_item_cart, .pg_swiper_wrapper .buy_with_swiper_04 .swiper-wrapper .swiper-slide .not_available .pg_item_container .pg_item_cart,
+.pg_swiper_wrapper .buy_with_swiper_05 .swiper-wrapper .swiper-slide .not_available .pg_item_container .pg_item_cart, .pg_swiper_wrapper .buy_with_swiper_06 .swiper-wrapper .swiper-slide .not_available .pg_item_container .pg_item_cart {
+  display: none;
+}
+.pg_swiper_wrapper .pg_swiper-pagination_01, .pg_swiper_wrapper .pg_swiper-pagination_02,
+.pg_swiper_wrapper .pg_swiper-pagination_03, .pg_swiper_wrapper .pg_swiper-pagination_04,
+.pg_swiper_wrapper .pg_swiper-pagination_05, .pg_swiper_wrapper .pg_swiper-pagination_06,
+.pg_swiper_wrapper .bw_swiper-pagination_01, .pg_swiper_wrapper .bw_swiper-pagination_02,
+.pg_swiper_wrapper .bw_swiper-pagination_03, .pg_swiper_wrapper .bw_swiper-pagination_04,
+.pg_swiper_wrapper .bw_swiper-pagination_05, .pg_swiper_wrapper .bw_swiper-pagination_06 {
+  display: none;
+}
+@media (max-width: 1260px) {
+  .pg_swiper_wrapper .pg_swiper-pagination_01, .pg_swiper_wrapper .pg_swiper-pagination_02,
+.pg_swiper_wrapper .pg_swiper-pagination_03, .pg_swiper_wrapper .pg_swiper-pagination_04,
+.pg_swiper_wrapper .pg_swiper-pagination_05, .pg_swiper_wrapper .pg_swiper-pagination_06,
+.pg_swiper_wrapper .bw_swiper-pagination_01, .pg_swiper_wrapper .bw_swiper-pagination_02,
+.pg_swiper_wrapper .bw_swiper-pagination_03, .pg_swiper_wrapper .bw_swiper-pagination_04,
+.pg_swiper_wrapper .bw_swiper-pagination_05, .pg_swiper_wrapper .bw_swiper-pagination_06 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  .pg_swiper_wrapper .pg_swiper-pagination_01 .swiper-pagination-bullet, .pg_swiper_wrapper .pg_swiper-pagination_02 .swiper-pagination-bullet,
+.pg_swiper_wrapper .pg_swiper-pagination_03 .swiper-pagination-bullet, .pg_swiper_wrapper .pg_swiper-pagination_04 .swiper-pagination-bullet,
+.pg_swiper_wrapper .pg_swiper-pagination_05 .swiper-pagination-bullet, .pg_swiper_wrapper .pg_swiper-pagination_06 .swiper-pagination-bullet,
+.pg_swiper_wrapper .bw_swiper-pagination_01 .swiper-pagination-bullet, .pg_swiper_wrapper .bw_swiper-pagination_02 .swiper-pagination-bullet,
+.pg_swiper_wrapper .bw_swiper-pagination_03 .swiper-pagination-bullet, .pg_swiper_wrapper .bw_swiper-pagination_04 .swiper-pagination-bullet,
+.pg_swiper_wrapper .bw_swiper-pagination_05 .swiper-pagination-bullet, .pg_swiper_wrapper .bw_swiper-pagination_06 .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    background-color: #C4C4C4;
+    transition: all 0.3s ease 0s;
+  }
+  .pg_swiper_wrapper .pg_swiper-pagination_01 .swiper-pagination-bullet-active, .pg_swiper_wrapper .pg_swiper-pagination_02 .swiper-pagination-bullet-active,
+.pg_swiper_wrapper .pg_swiper-pagination_03 .swiper-pagination-bullet-active, .pg_swiper_wrapper .pg_swiper-pagination_04 .swiper-pagination-bullet-active,
+.pg_swiper_wrapper .pg_swiper-pagination_05 .swiper-pagination-bullet-active, .pg_swiper_wrapper .pg_swiper-pagination_06 .swiper-pagination-bullet-active,
+.pg_swiper_wrapper .bw_swiper-pagination_01 .swiper-pagination-bullet-active, .pg_swiper_wrapper .bw_swiper-pagination_02 .swiper-pagination-bullet-active,
+.pg_swiper_wrapper .bw_swiper-pagination_03 .swiper-pagination-bullet-active, .pg_swiper_wrapper .bw_swiper-pagination_04 .swiper-pagination-bullet-active,
+.pg_swiper_wrapper .bw_swiper-pagination_05 .swiper-pagination-bullet-active, .pg_swiper_wrapper .bw_swiper-pagination_06 .swiper-pagination-bullet-active {
+    background-color: #1C62CD;
+  }
+}
+.pg_swiper_wrapper .pg_swiper-button-prev_01, .pg_swiper_wrapper .pg_swiper-button-next_01, .pg_swiper_wrapper .pg_swiper-button-prev_02, .pg_swiper_wrapper .pg_swiper-button-next_02,
+.pg_swiper_wrapper .pg_swiper-button-prev_03, .pg_swiper_wrapper .pg_swiper-button-next_03, .pg_swiper_wrapper .pg_swiper-button-prev_04, .pg_swiper_wrapper .pg_swiper-button-next_04,
+.pg_swiper_wrapper .pg_swiper-button-prev_05, .pg_swiper_wrapper .pg_swiper-button-next_05, .pg_swiper_wrapper .pg_swiper-button-prev_06, .pg_swiper_wrapper .pg_swiper-button-next_06,
+.pg_swiper_wrapper .bw_swiper-button-prev_01, .pg_swiper_wrapper .bw_swiper-button-next_01, .pg_swiper_wrapper .bw_swiper-button-prev_02, .pg_swiper_wrapper .bw_swiper-button-next_02,
+.pg_swiper_wrapper .bw_swiper-button-prev_03, .pg_swiper_wrapper .bw_swiper-button-next_03, .pg_swiper_wrapper .bw_swiper-button-prev_04, .pg_swiper_wrapper .bw_swiper-button-next_04,
+.pg_swiper_wrapper .bw_swiper-button-prev_05, .pg_swiper_wrapper .bw_swiper-button-next_05, .pg_swiper_wrapper .bw_swiper-button-prev_06, .pg_swiper_wrapper .bw_swiper-button-next_06 {
+  position: absolute;
+  top: 50%;
+  width: 16px;
+  height: 29px;
+  background-image: url(../img/pg_slider_btn.svg);
+  cursor: pointer;
+}
+.pg_swiper_wrapper .pg_swiper-button-prev_01::after, .pg_swiper_wrapper .pg_swiper-button-next_01::after, .pg_swiper_wrapper .pg_swiper-button-prev_02::after, .pg_swiper_wrapper .pg_swiper-button-next_02::after,
+.pg_swiper_wrapper .pg_swiper-button-prev_03::after, .pg_swiper_wrapper .pg_swiper-button-next_03::after, .pg_swiper_wrapper .pg_swiper-button-prev_04::after, .pg_swiper_wrapper .pg_swiper-button-next_04::after,
+.pg_swiper_wrapper .pg_swiper-button-prev_05::after, .pg_swiper_wrapper .pg_swiper-button-next_05::after, .pg_swiper_wrapper .pg_swiper-button-prev_06::after, .pg_swiper_wrapper .pg_swiper-button-next_06::after,
+.pg_swiper_wrapper .bw_swiper-button-prev_01::after, .pg_swiper_wrapper .bw_swiper-button-next_01::after, .pg_swiper_wrapper .bw_swiper-button-prev_02::after, .pg_swiper_wrapper .bw_swiper-button-next_02::after,
+.pg_swiper_wrapper .bw_swiper-button-prev_03::after, .pg_swiper_wrapper .bw_swiper-button-next_03::after, .pg_swiper_wrapper .bw_swiper-button-prev_04::after, .pg_swiper_wrapper .bw_swiper-button-next_04::after,
+.pg_swiper_wrapper .bw_swiper-button-prev_05::after, .pg_swiper_wrapper .bw_swiper-button-next_05::after, .pg_swiper_wrapper .bw_swiper-button-prev_06::after, .pg_swiper_wrapper .bw_swiper-button-next_06::after {
+  content: "";
+}
+@media (max-width: 1260px) {
+  .pg_swiper_wrapper .pg_swiper-button-prev_01, .pg_swiper_wrapper .pg_swiper-button-next_01, .pg_swiper_wrapper .pg_swiper-button-prev_02, .pg_swiper_wrapper .pg_swiper-button-next_02,
+.pg_swiper_wrapper .pg_swiper-button-prev_03, .pg_swiper_wrapper .pg_swiper-button-next_03, .pg_swiper_wrapper .pg_swiper-button-prev_04, .pg_swiper_wrapper .pg_swiper-button-next_04,
+.pg_swiper_wrapper .pg_swiper-button-prev_05, .pg_swiper_wrapper .pg_swiper-button-next_05, .pg_swiper_wrapper .pg_swiper-button-prev_06, .pg_swiper_wrapper .pg_swiper-button-next_06,
+.pg_swiper_wrapper .bw_swiper-button-prev_01, .pg_swiper_wrapper .bw_swiper-button-next_01, .pg_swiper_wrapper .bw_swiper-button-prev_02, .pg_swiper_wrapper .bw_swiper-button-next_02,
+.pg_swiper_wrapper .bw_swiper-button-prev_03, .pg_swiper_wrapper .bw_swiper-button-next_03, .pg_swiper_wrapper .bw_swiper-button-prev_04, .pg_swiper_wrapper .bw_swiper-button-next_04,
+.pg_swiper_wrapper .bw_swiper-button-prev_05, .pg_swiper_wrapper .bw_swiper-button-next_05, .pg_swiper_wrapper .bw_swiper-button-prev_06, .pg_swiper_wrapper .bw_swiper-button-next_06 {
+    top: auto;
+    bottom: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .pg_swiper_wrapper .pg_swiper-button-prev_01, .pg_swiper_wrapper .pg_swiper-button-next_01, .pg_swiper_wrapper .pg_swiper-button-prev_02, .pg_swiper_wrapper .pg_swiper-button-next_02,
+.pg_swiper_wrapper .pg_swiper-button-prev_03, .pg_swiper_wrapper .pg_swiper-button-next_03, .pg_swiper_wrapper .pg_swiper-button-prev_04, .pg_swiper_wrapper .pg_swiper-button-next_04,
+.pg_swiper_wrapper .pg_swiper-button-prev_05, .pg_swiper_wrapper .pg_swiper-button-next_05, .pg_swiper_wrapper .pg_swiper-button-prev_06, .pg_swiper_wrapper .pg_swiper-button-next_06,
+.pg_swiper_wrapper .bw_swiper-button-prev_01, .pg_swiper_wrapper .bw_swiper-button-next_01, .pg_swiper_wrapper .bw_swiper-button-prev_02, .pg_swiper_wrapper .bw_swiper-button-next_02,
+.pg_swiper_wrapper .bw_swiper-button-prev_03, .pg_swiper_wrapper .bw_swiper-button-next_03, .pg_swiper_wrapper .bw_swiper-button-prev_04, .pg_swiper_wrapper .bw_swiper-button-next_04,
+.pg_swiper_wrapper .bw_swiper-button-prev_05, .pg_swiper_wrapper .bw_swiper-button-next_05, .pg_swiper_wrapper .bw_swiper-button-prev_06, .pg_swiper_wrapper .bw_swiper-button-next_06 {
+    display: none;
+  }
+}
+.pg_swiper_wrapper .pg_swiper-button-prev_01, .pg_swiper_wrapper .pg_swiper-button-prev_02,
+.pg_swiper_wrapper .pg_swiper-button-prev_03, .pg_swiper_wrapper .pg_swiper-button-prev_04,
+.pg_swiper_wrapper .pg_swiper-button-prev_05, .pg_swiper_wrapper .pg_swiper-button-prev_06,
+.pg_swiper_wrapper .bw_swiper-button-prev_01, .pg_swiper_wrapper .bw_swiper-button-prev_02,
+.pg_swiper_wrapper .bw_swiper-button-prev_03, .pg_swiper_wrapper .bw_swiper-button-prev_04,
+.pg_swiper_wrapper .bw_swiper-button-prev_05, .pg_swiper_wrapper .bw_swiper-button-prev_06 {
+  left: -35px;
+  transform: rotate(180deg);
+}
+@media (max-width: 1260px) {
+  .pg_swiper_wrapper .pg_swiper-button-prev_01, .pg_swiper_wrapper .pg_swiper-button-prev_02,
+.pg_swiper_wrapper .pg_swiper-button-prev_03, .pg_swiper_wrapper .pg_swiper-button-prev_04,
+.pg_swiper_wrapper .pg_swiper-button-prev_05, .pg_swiper_wrapper .pg_swiper-button-prev_06,
+.pg_swiper_wrapper .bw_swiper-button-prev_01, .pg_swiper_wrapper .bw_swiper-button-prev_02,
+.pg_swiper_wrapper .bw_swiper-button-prev_03, .pg_swiper_wrapper .bw_swiper-button-prev_04,
+.pg_swiper_wrapper .bw_swiper-button-prev_05, .pg_swiper_wrapper .bw_swiper-button-prev_06 {
+    left: 25%;
+  }
+}
+.pg_swiper_wrapper .pg_swiper-button-next_01, .pg_swiper_wrapper .pg_swiper-button-next_02,
+.pg_swiper_wrapper .pg_swiper-button-next_03, .pg_swiper_wrapper .pg_swiper-button-next_04,
+.pg_swiper_wrapper .pg_swiper-button-next_05, .pg_swiper_wrapper .pg_swiper-button-next_06,
+.pg_swiper_wrapper .bw_swiper-button-next_01, .pg_swiper_wrapper .bw_swiper-button-next_02,
+.pg_swiper_wrapper .bw_swiper-button-next_03, .pg_swiper_wrapper .bw_swiper-button-next_04,
+.pg_swiper_wrapper .bw_swiper-button-next_05, .pg_swiper_wrapper .bw_swiper-button-next_06 {
+  right: -35px;
+}
+@media (max-width: 1260px) {
+  .pg_swiper_wrapper .pg_swiper-button-next_01, .pg_swiper_wrapper .pg_swiper-button-next_02,
+.pg_swiper_wrapper .pg_swiper-button-next_03, .pg_swiper_wrapper .pg_swiper-button-next_04,
+.pg_swiper_wrapper .pg_swiper-button-next_05, .pg_swiper_wrapper .pg_swiper-button-next_06,
+.pg_swiper_wrapper .bw_swiper-button-next_01, .pg_swiper_wrapper .bw_swiper-button-next_02,
+.pg_swiper_wrapper .bw_swiper-button-next_03, .pg_swiper_wrapper .bw_swiper-button-next_04,
+.pg_swiper_wrapper .bw_swiper-button-next_05, .pg_swiper_wrapper .bw_swiper-button-next_06 {
+    right: 25%;
+  }
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -1367,10 +2054,16 @@ body {
   flex: 1 1 auto;
   z-index: 1;
 }
-.wrapper .popular_goods {
+.wrapper .popular_goods, .wrapper .buy_with {
   width: 100%;
+  padding-bottom: 86px;
 }
-.wrapper .popular_goods .popular_goods_content h1 {
+@media (max-width: 1200px) {
+  .wrapper .popular_goods, .wrapper .buy_with {
+    padding-bottom: calc(20px + 66 * ((100vw - 320px) / 880));
+  }
+}
+.wrapper .popular_goods .popular_goods_content h1, .wrapper .popular_goods .buy_with_content h1, .wrapper .buy_with .popular_goods_content h1, .wrapper .buy_with .buy_with_content h1 {
   font-style: normal;
   font-weight: 700;
   font-size: 25px;
@@ -1379,32 +2072,32 @@ body {
   padding-bottom: 25px;
 }
 @media (max-width: 1200px) {
-  .wrapper .popular_goods .popular_goods_content h1 {
+  .wrapper .popular_goods .popular_goods_content h1, .wrapper .popular_goods .buy_with_content h1, .wrapper .buy_with .popular_goods_content h1, .wrapper .buy_with .buy_with_content h1 {
     padding-bottom: calc(20px + 5 * ((100vw - 320px) / 880));
   }
 }
-.wrapper .popular_goods .popular_goods_content .tabs {
+.wrapper .popular_goods .popular_goods_content .tabs, .wrapper .popular_goods .buy_with_content .tabs, .wrapper .buy_with .popular_goods_content .tabs, .wrapper .buy_with .buy_with_content .tabs {
   display: flex;
   flex-direction: column;
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav {
+.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav, .wrapper .buy_with .buy_with_content .tabs .tabs-nav {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 35px;
 }
 @media (max-width: 1200px) {
-  .wrapper .popular_goods .popular_goods_content .tabs .tabs-nav {
+  .wrapper .popular_goods .popular_goods_content .tabs .tabs-nav, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav, .wrapper .buy_with .buy_with_content .tabs .tabs-nav {
     padding-bottom: calc(20px + 15 * ((100vw - 320px) / 880));
   }
 }
 @media (max-width: 576px) {
-  .wrapper .popular_goods .popular_goods_content .tabs .tabs-nav {
+  .wrapper .popular_goods .popular_goods_content .tabs .tabs-nav, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav, .wrapper .buy_with .buy_with_content .tabs .tabs-nav {
     gap: 10px;
     justify-content: center;
     padding-bottom: 0;
   }
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item {
+.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item {
   position: relative;
   cursor: pointer;
   padding-right: 8px;
@@ -1412,15 +2105,15 @@ body {
   transition: all 0.3s ease 0s;
 }
 @media (max-width: 576px) {
-  .wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item {
+  .wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item {
     margin-right: 30px;
     padding-right: 0;
   }
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item:last-child {
+.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item:last-child, .wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item:last-child, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item:last-child, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item:last-child, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item:last-child, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item:last-child, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item:last-child, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item:last-child {
   margin-right: 0;
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item::after {
+.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item::after, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item::after, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item::after, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item::after {
   content: "";
   position: absolute;
   bottom: -10px;
@@ -1431,365 +2124,496 @@ body {
   display: none;
 }
 @media (max-width: 576px) {
-  .wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item::after {
+  .wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item::after, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item::after, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item::after, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item::after {
     bottom: -5px;
   }
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item:hover {
+.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item:hover, .wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item:hover, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item:hover, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item:hover, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item:hover, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item:hover, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item:hover, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item:hover {
   text-shadow: 0 0 0.45px #2F3035, 0 0 0.45px #2F3035;
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item:hover::after {
+.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item:hover::after, .wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item:hover::after, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item:hover::after, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item:hover::after, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item:hover::after, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item:hover::after, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item:hover::after, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item:hover::after {
   display: block;
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .is_active {
+.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .is_active, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .is_active, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .is_active, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .is_active {
   text-shadow: 0 0 0.45px #2F3035, 0 0 0.45px #2F3035;
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .is_active::after {
+.wrapper .popular_goods .popular_goods_content .tabs .tabs-nav .is_active::after, .wrapper .popular_goods .buy_with_content .tabs .tabs-nav .is_active::after, .wrapper .buy_with .popular_goods_content .tabs .tabs-nav .is_active::after, .wrapper .buy_with .buy_with_content .tabs .tabs-nav .is_active::after {
   display: block;
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab {
+.wrapper .popular_goods .popular_goods_content .tabs .tabs__content, .wrapper .popular_goods .buy_with_content .tabs .tabs__content, .wrapper .buy_with .popular_goods_content .tabs .tabs__content, .wrapper .buy_with .buy_with_content .tabs .tabs__content {
+  margin-bottom: 15px;
+}
+.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab, .wrapper .popular_goods .popular_goods_content .tabs .tabs__content .bw_tab, .wrapper .popular_goods .buy_with_content .tabs .tabs__content .pg_tab, .wrapper .popular_goods .buy_with_content .tabs .tabs__content .bw_tab, .wrapper .buy_with .popular_goods_content .tabs .tabs__content .pg_tab, .wrapper .buy_with .popular_goods_content .tabs .tabs__content .bw_tab, .wrapper .buy_with .buy_with_content .tabs .tabs__content .pg_tab, .wrapper .buy_with .buy_with_content .tabs .tabs__content .bw_tab {
   display: none;
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper {
+.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .is_active, .wrapper .popular_goods .buy_with_content .tabs .tabs__content .is_active, .wrapper .buy_with .popular_goods_content .tabs .tabs__content .is_active, .wrapper .buy_with .buy_with_content .tabs .tabs__content .is_active {
+  display: block;
+}
+.wrapper .popular_goods .popular_goods_content .pg_content_bottom, .wrapper .popular_goods .buy_with_content .pg_content_bottom, .wrapper .buy_with .popular_goods_content .pg_content_bottom, .wrapper .buy_with .buy_with_content .pg_content_bottom {
   display: flex;
   flex-direction: column;
-  min-width: 0;
-  position: relative;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper {
-  width: 100%;
-  height: 450px;
-  overflow: hidden;
-  position: relative;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper {
   align-items: center;
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide {
+.wrapper .popular_goods .popular_goods_content .pg_content_bottom .show_more_btn, .wrapper .popular_goods .buy_with_content .pg_content_bottom .show_more_btn, .wrapper .buy_with .popular_goods_content .pg_content_bottom .show_more_btn, .wrapper .buy_with .buy_with_content .pg_content_bottom .show_more_btn {
   display: flex;
-  max-height: 410px;
+  padding: 17px 43px 15px 43px;
+  background-color: #F0F0F4;
   justify-content: center;
-  /*max-width: 270px;
-
-  @media (max-width: 320px) {
-    display: block;
-    max-width: none;
-  }*/
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item {
-  display: flex;
-  position: relative;
-  flex: 0 1 270px;
-  /*&::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba($color: #000000, $alpha: 0.05);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s ease 0s;
-
-    @media (max-width: 992px) {
-      opacity: 1;
-      visibility: visible;
-    }
-  }*/
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_not_available {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 70px;
-  width: 100%;
-  display: none;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container {
-  padding: 15px 20px;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover {
-  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::before, .wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover::after {
-  opacity: 0;
-  visibility: hidden;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_decor {
-  opacity: 0;
-  visibility: hidden;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_empty {
-  opacity: 0;
-  visibility: hidden;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .show_product {
-  opacity: 0.9;
-  visibility: visible;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_title {
-  color: #1C62CD;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container:hover .pg_item_content .pg_item_price {
-  color: #1C62CD;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #CDCDCD;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 3px;
-  background-color: #CDCDCD;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 3px;
-  height: 100%;
-  background-color: #CDCDCD;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_decor::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 3px;
-  height: 100%;
-  background-color: #CDCDCD;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_empty {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  z-index: 1;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_sale {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 63px;
-  height: 25px;
-  background-color: #1C62CD;
-  z-index: 2;
+  align-items: center;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.07em;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
+  color: #2F3035;
+  transition: all 0.5s ease 0s;
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_cart {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 60px;
-  height: 40px;
+.wrapper .popular_goods .popular_goods_content .pg_content_bottom .show_more_btn:hover, .wrapper .popular_goods .buy_with_content .pg_content_bottom .show_more_btn:hover, .wrapper .buy_with .popular_goods_content .pg_content_bottom .show_more_btn:hover, .wrapper .buy_with .buy_with_content .pg_content_bottom .show_more_btn:hover {
   background-color: #1C62CD;
-  border-radius: 10px 0px 0px 0px;
-  z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  color: #fff;
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content {
+.wrapper .discounts {
+  width: 100%;
+}
+.wrapper .discounts .discounts_content {
   display: flex;
-  flex-direction: column;
-  gap: 14px;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 40px;
+  background-color: #1C62CD;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media (max-width: 1200px) {
+  .wrapper .discounts .discounts_content {
+    padding-top: calc(10px + 20 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .wrapper .discounts .discounts_content {
+    padding-bottom: calc(10px + 20 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 992px) {
+  .wrapper .discounts .discounts_content {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 992px) {
+  .wrapper .discounts .discounts_content {
+    column-gap: 0;
+  }
+}
+.wrapper .discounts .discounts_content .ATVs_images {
+  display: flex;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+@media (max-width: 992px) {
+  .wrapper .discounts .discounts_content .ATVs_images {
+    width: 152px;
+    height: 116px;
+  }
+}
+@media (max-width: 992px) and (max-width: 1200px) {
+  .wrapper .discounts .discounts_content .ATVs_images {
+    width: calc(67px + 85 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 992px) and (max-width: 1200px) {
+  .wrapper .discounts .discounts_content .ATVs_images {
+    height: calc(54px + 62 * ((100vw - 320px) / 880));
+  }
+}
+.wrapper .discounts .discounts_content .ATVs_images img {
   position: relative;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_like {
-  display: flex;
-  justify-content: flex-end;
+@media (max-width: 992px) {
+  .wrapper .discounts .discounts_content .ATVs_images img {
+    position: absolute;
+  }
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_photo {
-  display: flex;
-  justify-content: center;
+.wrapper .discounts .discounts_content .ATVs_images img:last-child {
+  transform: scaleX(-1);
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #2F3035;
-  flex: 1 1 auto;
+@media (max-width: 992px) {
+  .wrapper .discounts .discounts_content .ATVs_images img:last-child {
+    transform: scaleX(1);
+  }
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .pg_item .pg_item_container .pg_item_content .pg_item_price {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px 0 15px;
+.wrapper .discounts .discounts_content h2 {
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 36px;
   line-height: 36px;
-  color: #2F3035;
+  color: #fff;
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .not_available {
-  position: relative;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container {
-  box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::before, .wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .not_available:hover .pg_item_container::after {
-  opacity: 0;
-  visibility: hidden;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .not_available:hover .pg_item_decor {
-  opacity: 0;
-  visibility: hidden;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .not_available:hover .pg_item_empty {
-  opacity: 0;
-  visibility: hidden;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .not_available:hover .show_product {
-  opacity: 0.9;
-  visibility: visible;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .not_available:hover .pg_item_content .pg_item_title {
-  color: #1C62CD;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .not_available .pg_item_not_available {
-  display: flex;
-  gap: 13px;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fff;
-  z-index: 2;
-  max-width: 99%;
-  position: absolute;
-  bottom: 1px;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .not_available .pg_item_not_available span {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
-  color: #2F3035;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #1C62CD;
-  text-decoration: underline;
-  transition: all 0.3s ease 0s;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .not_available .pg_item_not_available .report_btn:hover {
-  text-shadow: 0 0 0.45px #2F3035, 0 0 0.45px #2F3035;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .popular_goods_swiper .swiper-wrapper .swiper-slide .not_available .pg_item_container .pg_item_cart {
-  display: none;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-pagination {
-  display: none;
-}
-@media (max-width: 1260px) {
-  .wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-pagination {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  .wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-pagination .swiper-pagination-bullet {
-    width: 14px;
-    height: 14px;
-    background-color: #C4C4C4;
-    transition: all 0.3s ease 0s;
-  }
-  .wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-pagination .swiper-pagination-bullet-active {
-    background-color: #1C62CD;
+@media (max-width: 1200px) {
+  .wrapper .discounts .discounts_content h2 {
+    font-size: calc(18px + 18 * ((100vw - 320px) / 880));
   }
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-button-prev, .wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-button-next {
-  position: absolute;
-  top: 50%;
-  width: 16px;
-  height: 29px;
-  background-image: url(../img/pg_slider_btn.svg);
-  cursor: pointer;
-}
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-button-prev::after, .wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-button-next::after {
-  content: "";
-}
-@media (max-width: 1260px) {
-  .wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-button-prev, .wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-button-next {
-    top: auto;
-    bottom: -8px;
+@media (max-width: 1200px) {
+  .wrapper .discounts .discounts_content h2 {
+    line-height: calc(18px + 18 * ((100vw - 320px) / 880));
   }
 }
-@media (max-width: 576px) {
-  .wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-button-prev, .wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-button-next {
+@media (max-width: 992px) {
+  .wrapper .discounts .discounts_content h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .wrapper .discounts .discounts_content h2 br:first-child {
     display: none;
   }
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-button-prev {
-  left: -35px;
+.wrapper .discounts .discounts_content .view_all_btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: right;
+  color: #2F3035;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  padding-left: 41px;
+  padding-right: 41px;
+  transition: all 0.5s ease 0s;
+}
+@media (max-width: 1200px) {
+  .wrapper .discounts .discounts_content .view_all_btn {
+    font-size: calc(14px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .wrapper .discounts .discounts_content .view_all_btn {
+    line-height: calc(30px + 20 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .wrapper .discounts .discounts_content .view_all_btn {
+    padding-top: calc(0px + 3 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .wrapper .discounts .discounts_content .view_all_btn {
+    padding-bottom: calc(0px + 4 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .wrapper .discounts .discounts_content .view_all_btn {
+    padding-left: calc(12px + 29 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .wrapper .discounts .discounts_content .view_all_btn {
+    padding-right: calc(12px + 29 * ((100vw - 320px) / 880));
+  }
+}
+.wrapper .discounts .discounts_content .view_all_btn:hover {
+  opacity: 0.8;
+}
+.wrapper .discounts .discounts_content .ATVs_images_mobile {
+  width: auto;
+  height: auto;
+  position: relative;
+  display: none;
+}
+@media (max-width: 992px) {
+  .wrapper .discounts .discounts_content .ATVs_images_mobile {
+    display: block;
+    width: 175px;
+    height: 113px;
+  }
+}
+@media (max-width: 992px) and (max-width: 1200px) {
+  .wrapper .discounts .discounts_content .ATVs_images_mobile {
+    width: calc(70px + 105 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 992px) and (max-width: 1200px) {
+  .wrapper .discounts .discounts_content .ATVs_images_mobile {
+    height: calc(48px + 65 * ((100vw - 320px) / 880));
+  }
+}
+.wrapper .discounts .discounts_content .ATVs_images_mobile img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .wrapper .discounts .discounts_content .ATVs_images_mobile img {
+    position: absolute;
+  }
+}
+.wrapper .discounts .discounts_content .ATVs_images_mobile img:last-child {
+  transform: scaleX(-1);
+}
+.wrapper .buy_with {
+  padding-top: 72px;
+}
+@media (max-width: 1200px) {
+  .wrapper .buy_with {
+    padding-top: calc(20px + 52 * ((100vw - 320px) / 880));
+  }
+}
+.wrapper .footer {
+  width: 100%;
+  background-color: #F0F0F4;
+  padding-top: 42px;
+  padding-bottom: 22px;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .wrapper .footer {
+    padding-top: calc(22px + 20 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 1200px) {
+  .wrapper .footer {
+    padding-bottom: calc(12px + 10 * ((100vw - 320px) / 880));
+  }
+}
+@media (max-width: 576px) {
+  .wrapper .footer {
+    background-color: #F9F9FC;
+  }
+}
+@media (max-width: 992px) {
+  .wrapper .footer::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+  }
+}
+.wrapper .footer .footer_content {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+@media (max-width: 992px) {
+  .wrapper .footer .footer_content {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+}
+.wrapper .footer .footer_content .footer_subscription {
+  display: flex;
+  flex-direction: column;
+  row-gap: 34px;
+}
+@media (max-width: 992px) {
+  .wrapper .footer .footer_content .footer_subscription {
+    row-gap: 17px;
+  }
+}
+.wrapper .footer .footer_content .footer_subscription h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2F3035;
+}
+@media (max-width: 992px) {
+  .wrapper .footer .footer_content .footer_subscription h3 {
+    text-align: center;
+  }
+}
+.wrapper .footer .footer_content .footer_subscription form {
+  position: relative;
+  max-height: 33px;
+  min-width: 300px;
+}
+.wrapper .footer .footer_content .footer_subscription form input {
+  width: 100%;
+  padding: 8px 12px 8px 12px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #C4C4C4;
+}
+.wrapper .footer .footer_content .footer_subscription form button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 13px;
+  text-align: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #fff;
+  height: 100%;
+  background-color: #1C62CD;
+  padding: 0 16px;
+  transition: all 0.3s ease 0s;
+}
+.wrapper .footer .footer_content .footer_subscription form button:hover {
+  background-color: #1959b8;
+}
+.wrapper .footer .footer_content .footer_links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex: 0 1 340px;
+  column-gap: 10px;
+  row-gap: 30px;
+}
+@media (max-width: 992px) {
+  .wrapper .footer .footer_content .footer_links {
+    flex: none;
+    width: 300px;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .wrapper .footer .footer_content .footer_links {
+    flex-direction: column;
+    align-items: center;
+    gap: 26px;
+    min-width: 320px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .wrapper .footer .footer_content .footer_links .footer_links_01, .wrapper .footer .footer_content .footer_links .footer_links_02 {
+    width: 45%;
+  }
+}
+@media (max-width: 576px) {
+  .wrapper .footer .footer_content .footer_links .footer_links_01, .wrapper .footer .footer_content .footer_links .footer_links_02 {
+    width: 100%;
+    text-align: start;
+    padding-left: 16px;
+  }
+}
+.wrapper .footer .footer_content .footer_links .footer_links_01 .footer_links_item_title, .wrapper .footer .footer_content .footer_links .footer_links_02 .footer_links_item_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2F3035;
+  position: relative;
+  background-color: #F9F9FC;
+  text-align: start;
+  padding-bottom: 10px;
+}
+@media (max-width: 576px) {
+  .wrapper .footer .footer_content .footer_links .footer_links_01 .footer_links_item_title, .wrapper .footer .footer_content .footer_links .footer_links_02 .footer_links_item_title {
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: -0.0861538px;
+    color: #7F7F7F;
+  }
+}
+.wrapper .footer .footer_content .footer_links .footer_links_01 .footer_links_item_title::before, .wrapper .footer .footer_content .footer_links .footer_links_02 .footer_links_item_title::before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #F0F0F4;
+}
+.wrapper .footer .footer_content .footer_links .footer_links_01 .footer_links_item_title::after, .wrapper .footer .footer_content .footer_links .footer_links_02 .footer_links_item_title::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  right: 14px;
+  width: 12px;
+  height: 7px;
+  background-image: url(../img/icons/spoiler_arrow.svg);
+  display: none;
+  transition: all 0.3s ease 0s;
+}
+@media (max-width: 576px) {
+  .wrapper .footer .footer_content .footer_links .footer_links_01 .footer_links_item_title::after, .wrapper .footer .footer_content .footer_links .footer_links_02 .footer_links_item_title::after {
+    display: inline-block;
+  }
+}
+.wrapper .footer .footer_content .footer_links .footer_links_01 .footer_links_item_title._active, .wrapper .footer .footer_content .footer_links .footer_links_02 .footer_links_item_title._active {
+  display: inline;
+}
+.wrapper .footer .footer_content .footer_links .footer_links_01 .footer_links_item_title._active::after, .wrapper .footer .footer_content .footer_links .footer_links_02 .footer_links_item_title._active::after {
   transform: rotate(180deg);
 }
-@media (max-width: 1260px) {
-  .wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-button-prev {
-    left: 25%;
+.wrapper .footer .footer_content .footer_links .footer_links_01 .fl_list, .wrapper .footer .footer_content .footer_links .footer_links_02 .fl_list {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 576px) {
+  .wrapper .footer .footer_content .footer_links .footer_links_01 .fl_list, .wrapper .footer .footer_content .footer_links .footer_links_02 .fl_list {
+    row-gap: 10px;
   }
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-button-next {
-  right: -35px;
+.wrapper .footer .footer_content .footer_links .footer_links_01 .fl_list .fl_link, .wrapper .footer .footer_content .footer_links .footer_links_02 .fl_list .fl_link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #2F3035;
 }
-@media (max-width: 1260px) {
-  .wrapper .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab .pg_swiper_wrapper .pg_swiper-button-next {
-    right: 25%;
+.wrapper .footer .footer_content .footer_links .footer_links_01 .fl_list .fl_link:hover, .wrapper .footer .footer_content .footer_links .footer_links_02 .fl_list .fl_link:hover {
+  text-decoration: underline;
+}
+@media (max-width: 576px) {
+  .wrapper .footer .footer_content .footer_links .footer_links_01 .fl_list._active, .wrapper .footer .footer_content .footer_links .footer_links_02 .fl_list._active {
+    display: none;
   }
 }
-.wrapper .popular_goods .popular_goods_content .tabs .tabs__content .is_active {
-  display: block;
+.wrapper .footer .footer_content .footer_links .footer_links_02 {
+  flex: 0 1 145px;
+}
+@media (max-width: 576px) {
+  .wrapper .footer .footer_content .footer_links .footer_links_02 {
+    flex: none;
+  }
+}
+.wrapper .footer .footer_content .footer_social {
+  display: flex;
+  margin-top: 55px;
+  z-index: 1;
+}
+@media (max-width: 992px) {
+  .wrapper .footer .footer_content .footer_social {
+    margin-top: 0;
+    flex-direction: column;
+  }
+}
+.wrapper .footer .footer_content .footer_social .fs_links {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.wrapper .footer .footer_content .footer_social .fs_text_links {
+  margin-top: 20px;
+  display: none;
+}
+@media (max-width: 576px) {
+  .wrapper .footer .footer_content .footer_social .fs_text_links {
+    display: block;
+  }
 }
