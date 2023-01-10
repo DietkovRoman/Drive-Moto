@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="css/style.min.css">
-	<title>Главная страница</title>
+	<title>Гидроциклы</title>
 </head>
 <body>
 	<div class="wrapper">
@@ -62,812 +62,553 @@
 	</div>
 </header>
 		<main class="main">
-			<section class="slider_block">
-				<div class="slider_content container">
-					<div class="slider_swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide ibg">
-								<img src="img/slider_img_01.jpg" alt="">
-								<div class="slide_text">Почувствуй <br>скорость и <br>экстрим</div>
-							</div>
-							<div class="swiper-slide ibg"><img src="img/slider_img_01.jpg" alt=""></div>
-							<div class="swiper-slide ibg"><img src="img/slider_img_01.jpg" alt=""></div>
-							<div class="swiper-slide ibg">
-								<img src="img/slider_img_01.jpg" alt="">
-								<div class="slide_text">Почувствуй <br>скорость и <br>экстрим</div>
-							</div>
-							<div class="swiper-slide ibg"><img src="img/slider_img_01.jpg" alt=""></div>
-							<div class="swiper-slide ibg">
-								<img src="img/slider_img_01.jpg" alt="">
-								<div class="slide_text">Почувствуй <br>скорость и <br>экстрим</div>
-							</div>
+			<div class="page_content container">
+				<nav class="page_navigation">
+					<ul class="pn_list">
+						<li><a href="" class="pn_link">Главная</a></li>
+						<li><span class="pm_item">Гидроциклы</span></li>
+					</ul>
+				</nav>
+				<div class="pg_selected_block">
+					<h1>Гидроциклы</h1>
+					<div class="multiselected_buttons">
+						<div class="select is_visible">
+							<input type="checkbox" id="item_1">
+							<label class="button_select" for="item_1">Полноприводные</label>
 						</div>
-						<div class="slider_swiper-pagination"></div>
-						<div class="slider_btns">
-							<div class="slider_btn_prev"></div>
-							<div class="slider_btn_next"></div>
+						<div class="select is_visible">
+							<input type="checkbox" id="item_2">
+							<label class="button_select" for="item_2">от 5000</label>
 						</div>
+						<div class="select is_visible">
+							<input type="checkbox" id="item_3">
+							<label class="button_select" for="item_3">BRP</label>
+						</div>
+						<div class="select">
+							<input type="checkbox" id="item_4">
+							<label class="button_select" for="item_4">Переднеприводные</label>
+						</div>
+						<div class="select">
+							<input type="checkbox" id="item_5">
+							<label class="button_select" for="item_5">от 10000</label>
+						</div>
+						<div class="select">
+							<input type="checkbox" id="item_6">
+							<label class="button_select" for="item_6">Spark</label>
+						</div>
+						<div class="select">
+							<input type="checkbox" id="item_7">
+							<label class="button_select" for="item_7">Заднеприводные</label>
+						</div>
+						<div class="select">
+							<input type="checkbox" id="item_8">
+							<label class="button_select" for="item_8">от 20000</label>
+						</div>
+						<div class="select">
+							<input type="checkbox" id="item_9">
+							<label class="button_select" for="item_9">Super Spark</label>
+						</div>
+						<button class="show_more_btn btn_is_active">еще</button>
 					</div>
-					<a href="" class="special_offer">
-						<div class="show_product">посмотреть товар</div>
-						<div class="so_prices">
-							<div class="so_promotion">акция</div>
-							<div class="so_price">
-								<p class="so_price_new">190 000 ₽</p>
-								<p class="so_price_old">225 000 ₽</p>
+					<div class="sorting_block">
+						<div class="dropdown">
+							<div class="dropdown-btn">
+							  <p>По полулярности</p>
 							</div>
-						</div>
-						<div class="product_photo"><img src="img/goods/boat_motor_01.png" alt=""></div>
-						<div class="product_title">Лодочный мотор <br>Suzuki DF9.9BRS</div>
-						<div class="so_term">Акция действует до <span>31.08.2020</span></div>
-					</a>
-				</div>
-			</section>
-			<section class="search_block">
-				<div class="search_block container">
-					<div class="tabs">
-						<div class="tabs-nav">
-							<div class="tabs_nav__item is_active" data-tab-name="tab-1">Поиск по номеру</div>
-							<div class="tabs_nav__item" data-tab-name="tab-2">Поиск по марке</div>
-							<div class="tabs_nav__item" data-tab-name="tab-3">Поиск по названию товара</div>
-						</div>
-						<div class="tabs__content">
-							<div class="tab is_active tab-1">
-								<form action="" class="form_search">
-									<label class="is-vishidden">Введите номер</label>
-									<input type="search" class="search-input" placeholder="Введите номер"/>
-									<input type="submit" class="search-submit" value="ИСКАТЬ">
-									<input type="submit" class="search-submit_btn" value="">
-								</form>
+							<div class="dropdown-content">
+							  <div class="dropdown-item" data-value="1">По полулярности</div>
+							  <div class="dropdown-item" data-value="2">По цене (увеличение)</div>
+							  <div class="dropdown-item" data-value="3">По цене (уменьшение)</div>
 							</div>
-							<div class="tab tab-2">
-								<form action="" class="form_search">
-									<label class="is-vishidden">Введите марку</label>
-									<input type="search" class="search-input" placeholder="Введите марку"/>
-									<input type="submit" class="search-submit" value="ИСКАТЬ">
-									<input type="submit" class="search-submit_btn" value="">
-								</form>
-							</div>
-							<div class="tab tab-3">
-								<form action="" class="form_search">
-									<label class="is-vishidden">Введите название товара</label>
-									<input type="search" class="search-input" placeholder="Введите название товара"/>
-									<input type="submit" class="search-submit" value="ИСКАТЬ">
-									<input type="submit" class="search-submit_btn" value="">
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="categories">
-				<div class="categories_content container">
-					<a href="" class="categories_item">
-						<div class="citem_decor"></div>
-						<div class="citem_empty"></div>
-						<div class="citem_nlc">
-							<div class="citem_nl">
-								<div class="citem_title">Квадроциклы</div>
-								<div class="read_more">Подробее</div>
-							</div>
-						</div>
-						<div class="citem_img"><img src="img/goods/ATVs_01.png" alt=""></div>
-					</a>
-					<a href="" class="categories_item">
-						<div class="citem_decor"></div>
-						<div class="citem_empty"></div>
-						<div class="citem_nlc">
-							<div class="citem_nl">
-								<div class="citem_title">Гидроциклы</div>
-								<div class="read_more">Подробее</div>
-							</div>
-						</div>
-						<div class="citem_img"><img src="img/goods/jet_skis.png" alt=""></div>
-					</a>
-					<a href="" class="categories_item">
-						<div class="citem_decor"></div>
-						<div class="citem_empty"></div>
-						<div class="citem_nlc">
-							<div class="citem_nl">
-								<div class="citem_title">Катера</div>
-								<div class="read_more">Подробее</div>
-							</div>
-						</div>
-						<div class="citem_img"><img src="img/goods/boats.png" alt=""></div>
-					</a>
-					<a href="" class="categories_item">
-						<div class="citem_decor"></div>
-						<div class="citem_empty"></div>
-						<div class="citem_nlc">
-							<div class="citem_nl">
-								<div class="citem_title">Снегоходы</div>
-								<div class="read_more">Подробее</div>
-							</div>
-						</div>
-						<div class="citem_img"><img src="img/goods/Snowmobiles.png" alt=""></div>
-					</a>
-					<a href="" class="categories_item">
-						<div class="citem_decor"></div>
-						<div class="citem_empty"></div>
-						<div class="citem_nlc">
-							<div class="citem_nl">
-								<div class="citem_title">Вездеходы</div>
-								<div class="read_more">Подробее</div>
-							</div>
-						</div>
-						<div class="citem_img"><img src="img/goods/ATVs_02.png" alt=""></div>
-					</a>
-					<a href="" class="categories_item">
-						<div class="citem_decor"></div>
-						<div class="citem_empty"></div>
-						<div class="citem_nlc">
-							<div class="citem_nl">
-								<div class="citem_title">Двигатели</div>
-								<div class="read_more">Подробее</div>
-							</div>
-						</div>
-						<div class="citem_img"><img src="img/goods/Engines.png" alt=""></div>
-					</a>
-				</div>
-			</section>
-			<section class="popular_goods">
-				<div class="popular_goods_content container">
-					<h1>Популярные товары</h1>
-					<div class="tabs">
-						<div class="tabs-nav">
-							<div class="pg_tabs_nav__item is_active" data-tab-name="tab-1">запчасти</div>
-							<div class="pg_tabs_nav__item" data-tab-name="tab-2">моторы</div>
-							<div class="pg_tabs_nav__item" data-tab-name="tab-3">шины</div>
-							<div class="pg_tabs_nav__item" data-tab-name="tab-4">электроника</div>
-							<div class="pg_tabs_nav__item" data-tab-name="tab-5">инструменты</div>
-							<div class="pg_tabs_nav__item" data-tab-name="tab-6">аксессуары</div>
-						</div>
-						<div class="tabs__content">
-							<div class="pg_tab is_active tab-1">
-								<div class="pg_swiper_wrapper">
-									<div class="popular_goods_swiper_01">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/backpack.png" alt=""></div>
-															<div class="pg_item_title">Водонепроницаемый Рюкзак</div>
-															<div class="pg_item_price">9 800 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_sale">sale</div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/vest.png" alt=""></div>
-															<div class="pg_item_title">Спасательный жилет BRP Men's Airflow PFD</div>
-															<div class="pg_item_price">6 900 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/audio.png" alt=""></div>
-															<div class="pg_item_title">BRP Audio-Premium System</div>
-															<div class="pg_item_price">68 000 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item not_available">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<a href="" class="report_btn">Сообщить о поступлении</a>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_sale">sale</div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/rescue_equipment.png" alt=""></div>
-															<div class="pg_item_title">Спасательное снаряжение</div>
-															<div class="pg_item_price">68 000 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item not_available">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<a href="" class="report_btn">Сообщить о поступлении</a>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_sale">sale</div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/rescue_equipment.png" alt=""></div>
-															<div class="pg_item_title">Спасательное снаряжение</div>
-															<div class="pg_item_price">68 000 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item not_available">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<a href="" class="report_btn">Сообщить о поступлении</a>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_sale">sale</div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/rescue_equipment.png" alt=""></div>
-															<div class="pg_item_title">Спасательное снаряжение</div>
-															<div class="pg_item_price">68 000 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="pg_swiper-pagination_01"></div>
-									<div class="pg_swiper-button-prev_01"></div>
-									<div class="pg_swiper-button-next_01"></div>
-								</div>
-							</div>
-							<div class="pg_tab tab-2">
-								<div class="pg_swiper_wrapper">
-									<div class="popular_goods_swiper_02">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/backpack.png" alt=""></div>
-															<div class="pg_item_title">Водонепроницаемый Рюкзак</div>
-															<div class="pg_item_price">9 800 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_sale">sale</div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/vest.png" alt=""></div>
-															<div class="pg_item_title">Спасательный жилет BRP Men's Airflow PFD</div>
-															<div class="pg_item_price">6 900 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/audio.png" alt=""></div>
-															<div class="pg_item_title">BRP Audio-Premium System</div>
-															<div class="pg_item_price">68 000 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="pg_swiper-pagination_02"></div>
-									<div class="pg_swiper-button-prev_02"></div>
-									<div class="pg_swiper-button-next_02"></div>
-								</div>
-							</div>
-							<div class="pg_tab tab-3">
-								<div class="pg_swiper_wrapper">
-									<div class="popular_goods_swiper_03">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/backpack.png" alt=""></div>
-															<div class="pg_item_title">Водонепроницаемый Рюкзак</div>
-															<div class="pg_item_price">9 800 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_sale">sale</div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/vest.png" alt=""></div>
-															<div class="pg_item_title">Спасательный жилет BRP Men's Airflow PFD</div>
-															<div class="pg_item_price">6 900 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/audio.png" alt=""></div>
-															<div class="pg_item_title">BRP Audio-Premium System</div>
-															<div class="pg_item_price">68 000 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item not_available">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<a href="" class="report_btn">Сообщить о поступлении</a>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_sale">sale</div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/rescue_equipment.png" alt=""></div>
-															<div class="pg_item_title">Спасательное снаряжение</div>
-															<div class="pg_item_price">68 000 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="pg_swiper-pagination_03"></div>
-									<div class="pg_swiper-button-prev_03"></div>
-									<div class="pg_swiper-button-next_03"></div>
-								</div>
-							</div>
-							<div class="pg_tab tab-4">
-								<div class="pg_swiper_wrapper">
-									<div class="popular_goods_swiper_04">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/backpack.png" alt=""></div>
-															<div class="pg_item_title">Водонепроницаемый Рюкзак</div>
-															<div class="pg_item_price">9 800 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_sale">sale</div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/vest.png" alt=""></div>
-															<div class="pg_item_title">Спасательный жилет BRP Men's Airflow PFD</div>
-															<div class="pg_item_price">6 900 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/audio.png" alt=""></div>
-															<div class="pg_item_title">BRP Audio-Premium System</div>
-															<div class="pg_item_price">68 000 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item not_available">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<a href="" class="report_btn">Сообщить о поступлении</a>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_sale">sale</div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/rescue_equipment.png" alt=""></div>
-															<div class="pg_item_title">Спасательное снаряжение</div>
-															<div class="pg_item_price">68 000 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="pg_swiper-pagination_04"></div>
-									<div class="pg_swiper-button-prev_04"></div>
-									<div class="pg_swiper-button-next_04"></div>
-								</div>
-							</div>
-							<div class="pg_tab tab-5">
-								<div class="pg_swiper_wrapper">
-									<div class="popular_goods_swiper_05">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/backpack.png" alt=""></div>
-															<div class="pg_item_title">Водонепроницаемый Рюкзак</div>
-															<div class="pg_item_price">9 800 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_sale">sale</div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/vest.png" alt=""></div>
-															<div class="pg_item_title">Спасательный жилет BRP Men's Airflow PFD</div>
-															<div class="pg_item_price">6 900 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/audio.png" alt=""></div>
-															<div class="pg_item_title">BRP Audio-Premium System</div>
-															<div class="pg_item_price">68 000 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item not_available">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<a href="" class="report_btn">Сообщить о поступлении</a>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_sale">sale</div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/rescue_equipment.png" alt=""></div>
-															<div class="pg_item_title">Спасательное снаряжение</div>
-															<div class="pg_item_price">68 000 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="pg_swiper-pagination_05"></div>
-									<div class="pg_swiper-button-prev_05"></div>
-									<div class="pg_swiper-button-next_05"></div>
-								</div>
-							</div>
-							<div class="pg_tab tab-6">
-								<div class="pg_swiper_wrapper">
-									<div class="popular_goods_swiper_06">
-										<div class="swiper-wrapper">
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/backpack.png" alt=""></div>
-															<div class="pg_item_title">Водонепроницаемый Рюкзак</div>
-															<div class="pg_item_price">9 800 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_sale">sale</div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/vest.png" alt=""></div>
-															<div class="pg_item_title">Спасательный жилет BRP Men's Airflow PFD</div>
-															<div class="pg_item_price">6 900 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<span class="report_btn">Сообщить о поступлении</span>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/audio.png" alt=""></div>
-															<div class="pg_item_title">BRP Audio-Premium System</div>
-															<div class="pg_item_price">68 000 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="swiper-slide">
-												<div class="pg_item not_available">
-													<div class="pg_item_like_wrapper">
-														<button class="pg_item_like"></button>
-													</div>
-													<div class="pg_item_not_available">
-														<span>нет в наличии</span>
-														<a href="" class="report_btn">Сообщить о поступлении</a>
-													</div>
-													<a href="" class="pg_item_container">
-														<div class="show_product">посмотреть товар</div>
-														<div class="pg_item_decor"></div>
-														<div class="pg_item_empty"></div>
-														<div class="pg_item_sale">sale</div>
-														<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
-														<div class="pg_item_content">
-															<div class="pg_item_photo"><img src="img/rescue_equipment.png" alt=""></div>
-															<div class="pg_item_title">Спасательное снаряжение</div>
-															<div class="pg_item_price">68 000 ₽</div>
-														</div>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="pg_swiper-pagination_06"></div>
-									<div class="pg_swiper-button-prev_06"></div>
-									<div class="pg_swiper-button-next_06"></div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="pg_content_bottom">
-						<a href="" class="show_more_btn">Показать еще</a>
+						 </div>
+						 <div class="content_style">
+							<button class="cs_tile _active">
+								<svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="1" y="1" width="21" height="19" stroke="#2F3035" stroke-width="2"></rect>
+									<rect x="7" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2"></rect>
+									<rect x="7" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2"></rect>
+									<rect x="14" y="6" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2"></rect>
+									<rect x="14" y="13" width="2" height="2" fill="#2F3035" stroke="#2F3035" stroke-width="2"></rect>
+								</svg>
+							</button>
+							<button class="cs_list">
+								<svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g opacity="1">
+										<rect x="6" width="19" height="3" rx="1.5" fill="#2F3035"></rect>
+										<rect x="6" y="8" width="19" height="3" rx="1.5" fill="#2F3035"></rect>
+										<rect x="6" y="16" width="19" height="3" rx="1.5" fill="#2F3035"></rect>
+										<rect width="3" height="3" rx="1.5" fill="#2F3035"></rect>
+										<rect y="8" width="3" height="3" rx="1.5" fill="#2F3035"></rect>
+										<rect y="16" width="3" height="3" rx="1.5" fill="#2F3035"></rect>
+									</g>
+								</svg>
+							</button>
+						 </div>
 					</div>
 				</div>
-			</section>
-			<div class="discounts">
-				<div class="discounts_content container">
-					<div class="ATVs_images">
-						<img src="img/goods/ATVs_01.png" alt="">
-						<img src="img/goods/ATVs_02.png" alt="" data-da=".ATVs_images_mobile, 992, first">
+				<div class="filter_block"></div>
+				<div class="pc_content">
+					<div data-spollers class="options" data-da=".filter_block, 576, first">
+						<button type="button" data-spoller class="filter_title">Фильтр</button>
+						<aside class="options_block">
+							<div class="tabs">
+								<div class="tabs-nav">
+									<div class="pc_tabs_nav__item is_active" data-tab-name="tab-1">Параметры</div>
+									<div class="pc_tabs_nav__item" data-tab-name="tab-2">по марке</div>
+								</div>
+								<div class="tabs__content">
+									<div class="pc_tab is_active tab-1">
+										<div class="availability">
+											<button type="button" data-spoller class="availability_title">Наличие</button>
+											<form class="form">
+												<label class="form__label" for="cb-1">
+												<input id="cb-1" name="cb1" type="checkbox">
+												<span class="caption">В наличие</span>
+												</label>
+												<label class="form__label" for="cb-2">
+												<input id="cb-2" name="cb2" type="checkbox">
+												<span class="caption">Под заказ</span>
+												</label> 
+											</form>
+										</div>
+										<div class="novelties">
+											<button type="button" data-spoller class="novelties_title">Новинки</button>
+											<form class="form">
+												<label class="form__label" for="rb-1">
+												<input id="rb-1" name="rb" value="cb1" type="radio" checked>
+												<span class="caption">Все</span>
+												</label>
+												<label class="form__label" for="rb-2">
+												<input id="rb-2" name="rb" value="cb2" type="radio">
+												<span class="caption">Новинки</span>
+												</label> 
+												<label class="form__label" for="rb-3">
+												<input id="rb-3" name="rb" value="cb3" type="radio">
+												<span class="caption">Акции</span>
+												</label> 
+											</form>
+										</div>
+										<div class="price">
+											<button type="button" data-spoller class="price_title">Цена</button>
+											<price-range currency=" ">
+												<div>
+												<div>
+													<input name="price-from" type="range" min="0" max="1000000"	step="500"	value="100000" aria-label="From"/>
+													<input name="price-to"	type="range" min="0"	max="1000000" step="500" value="500000"	aria-label="To"/>
+												</div>
+												</div>
+												<div class="price_output">
+													<output-start></output-start>
+													<output-end></output-end>
+												</div>
+											</price-range>
+										</div>
+										<div class="option_filters">
+											<div class="horse_power">
+												<h3>Мощность, л.с.</h3>
+												<div class="hp_dropdown">
+													<div class="hp_dropdown-btn">
+													<p>90</p>
+													</div>
+													<div class="hp_dropdown-content">
+														<div class="hp_dropdown-item" data-value="1">90</div>
+														<div class="hp_dropdown-item" data-value="2">130</div>
+														<div class="hp_dropdown-item" data-value="3">154</div>
+														<div class="hp_dropdown-item" data-value="4">230</div>
+														<div class="hp_dropdown-item" data-value="5">300</div>
+													</div>
+												</div>
+											</div>
+											<div class="engine_power">
+												<h3>Мощность двигателя, л.с.</h3>
+												<div class="ep_dropdown">
+													<div class="ep_dropdown-btn">
+													<p>55</p>
+													</div>
+													<div class="ep_dropdown-content">
+													<div class="ep_dropdown-item" data-value="1">55</div>
+													<div class="ep_dropdown-item" data-value="2">80</div>
+													<div class="ep_dropdown-item" data-value="3">90</div>
+													<div class="ep_dropdown-item" data-value="4">100</div>
+													<div class="ep_dropdown-item" data-value="5">110</div>
+													</div>
+												</div>
+											</div>
+											<div class="max_speed">
+												<h3>Макс. скорость</h3>
+												<div class="ms_dropdown">
+													<div class="ms_dropdown-btn">
+													<p>205</p>
+													</div>
+													<div class="ms_dropdown-content">
+													<div class="ms_dropdown-item" data-value="1">205</div>
+													<div class="ms_dropdown-item" data-value="2">230</div>
+													<div class="ms_dropdown-item" data-value="3">250</div>
+													<div class="ms_dropdown-item" data-value="4">280</div>
+													<div class="ms_dropdown-item" data-value="5">300</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="brand">
+											<button type="button" data-spoller class="brand_title">Бренд</button>
+											<div class="brand_content">
+												<form class="brand_form">
+													<label class="brand_form__label" for="bcb-1">
+													<input id="bcb-1" name="bcb1" type="checkbox" checked>
+													<span class="caption">BRP</span>
+													</label>
+													<label class="brand_form__label" for="bcb-2">
+													<input id="bcb-2" name="bcb2" type="checkbox" checked>
+													<span class="caption">Spark 2</span>
+													</label> 
+													<label class="brand_form__label" for="bcb-3">
+														<input id="bcb-3" name="bcb3" type="checkbox">
+														<span class="caption">Spark 3</span>
+													</label>
+												</form>
+												<button class="brand_vm_btn">Показать еще</button>
+											</div>
+										</div>
+										<div class="model">
+											<button type="button" data-spoller class="model_title">Модель</button>
+											<div class="model_content">
+												<form class="model_form" name="model_form" action="#" method="get" enctype="multipart/form-data">
+													<input class="input-search" type="search" placeholder="Введите модель" name="model" required>
+												</form>
+												<form class="model_form_checks">
+													<label class="model_form__label" for="mcb-1">
+														<input id="mcb-1" name="bcb1" type="checkbox" checked>
+														<span class="caption">Sea-doo Spark 2</span>
+													</label>
+													<label class="model_form__label" for="mcb-2">
+														<input id="mcb-2" name="mcb2" type="checkbox" checked>
+														<span class="caption">SeaDoo Spark 90 </span>
+													</label> 
+													<label class="model_form__label" for="mcb-3">
+														<input id="mcb-3" name="mcb3" type="checkbox">
+														<span class="caption">SeaDoo GTI 155</span>
+													</label>
+													<label class="model_form__label" for="mcb-4">
+														<input id="mcb-4" name="mcb4" type="checkbox">
+														<span class="caption">SeaDoo GTR 230</span>
+													</label>
+												</form>
+												<button class="model_vm_btn">Показать еще</button>
+											</div>
+										</div>
+										<div class="stock">
+											<button type="button" data-spoller class="model_title">Акции</button>
+											<div class="stock_content">
+												<button class="stock_btn _active">SALE</button>
+												<button class="stock_btn">NEW</button>
+												<button class="stock_btn">HIT</button>
+												<button class="stock_btn dealer">ДИЛЕР</button>
+											</div>
+										</div>
+										<div class="country">
+											<button type="button" data-spoller class="country_title">Страны</button>
+											<div class="country_content">
+												<form class="country_form_checks">
+													<label class="country_form__label" for="cocb-1">
+														<input id="cocb-1" name="cocb1" type="checkbox" checked>
+														<span class="caption">Россия</span>
+													</label>
+													<label class="country_form__label" for="cocb-2">
+														<input id="cocb-2" name="cocb2" type="checkbox" checked>
+														<span class="caption">Германия</span>
+													</label> 
+													<label class="country_form__label" for="cocb-3">
+														<input id="cocb-3" name="cocb3" type="checkbox">
+														<span class="caption">Китай</span>
+													</label>
+													<label class="country_form__label" for="cocb-4">
+														<input id="cocb-4" name="cocb4" type="checkbox">
+														<span class="caption">CША</span>
+													</label>
+												</form>
+												<button class="country_vm_btn">Показать еще</button>
+											</div>
+										</div>
+										<div class="total">
+											<button class="choose_btn">ВЫБРАТЬ</button>
+											<div class="extra_options">
+												<button type="button" data-spoller class="extra_options_title">Дополнительные параметры</button>
+												<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+													Assumenda, quis officiis libero porro vitae reiciendis commodi labore ratione, 
+													at ullam praesentium exercitationem repellat ab debitis provident architecto velit cupiditate voluptatum.</p>
+											</div>
+											<button class="reset_filter">Сбросить фильтр</button>
+										</div>
+									</div>
+									<div class="pc_tab tab-2">
+										tab_content_2
+									</div>
+								</div>
+							</div>
+						</aside>
 					</div>
-					<h2 data-da=".discounts_content, 992, first">CКИДКИ <br>на все запчасти <br>до 70%</h2>
-					<a href="" class="view_all_btn">ПОСМОТЕТЬ ВСЕ</a>
-					<div class="ATVs_images_mobile"></div>
+					<div class="catalog">
+						<div class="catalog_items">
+							<div class="pg_item_changeable">
+								<div class="pg_item_like_wrapper">
+									<button class="pg_item_like"></button>
+								</div>
+								<div class="pg_item_not_available">
+									<span>нет в наличии</span>
+									<span class="report_btn">Сообщить о поступлении</span>
+								</div>
+								<a href="" class="pg_item_container">
+									<div class="show_product">посмотреть товар</div>
+									<div class="pg_item_decor"></div>
+									<div class="pg_item_empty"></div>
+									<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
+									<div class="pg_item_content">
+										<div class="pg_item_photo"><img src="img/goods/jet_ski_orange.png" alt=""></div>
+										<div class="pg_item_title">Гидроцикл BRP SeaDoo GTI 130hp SE Black\Mango</div>
+										<div class="pg_item_price">1 049 500 ₽</div>
+									</div>
+								</a>
+							</div>
+							<div class="pg_item_changeable">
+								<div class="pg_item_like_wrapper">
+									<button class="pg_item_like"></button>
+								</div>
+								<div class="pg_item_not_available">
+									<span>нет в наличии</span>
+									<span class="report_btn">Сообщить о поступлении</span>
+								</div>
+								<a href="" class="pg_item_container">
+									<div class="show_product">посмотреть товар</div>
+									<div class="pg_item_decor"></div>
+									<div class="pg_item_empty"></div>
+									<div class="pg_item_sale">sale</div>
+									<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
+									<div class="pg_item_content">
+										<div class="pg_item_photo"><img src="img/goods/jet_ski_blue.png" alt=""></div>
+										<div class="pg_item_title">Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</div>
+										<div class="pg_item_price">1 100 475 ₽</div>
+									</div>
+								</a>
+							</div>
+							<div class="pg_item_changeable">
+								<div class="pg_item_like_wrapper">
+									<button class="pg_item_like"></button>
+								</div>
+								<div class="pg_item_not_available">
+									<span>нет в наличии</span>
+									<span class="report_btn">Сообщить о поступлении</span>
+								</div>
+								<a href="" class="pg_item_container">
+									<div class="show_product">посмотреть товар</div>
+									<div class="pg_item_decor"></div>
+									<div class="pg_item_empty"></div>
+									<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
+									<div class="pg_item_content">
+										<div class="pg_item_photo"><img src="img/goods/jet_ski_green.png" alt=""></div>
+										<div class="pg_item_title">Гидроцикл BRP SeaDoo GTR 230hp X California green</div>
+										<div class="pg_item_price">1 323 700 ₽</div>
+									</div>
+								</a>
+							</div>
+							<div class="pg_item_changeable not_available">
+								<div class="pg_item_like_wrapper">
+									<button class="pg_item_like"></button>
+								</div>
+								<div class="pg_item_not_available">
+									<span>нет в наличии</span>
+									<span class="report_btn">Сообщить о поступлении</span>
+								</div>
+								<a href="" class="pg_item_container">
+									<div class="show_product">посмотреть товар</div>
+									<div class="pg_item_decor"></div>
+									<div class="pg_item_empty"></div>
+									<div class="pg_item_sale">sale</div>
+									<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
+									<div class="pg_item_content">
+										<div class="pg_item_photo"><img src="img/goods/jet_ski_blue_02.png" alt=""></div>
+										<div class="pg_item_title">Гидроцикл BRP SeaDoo GTR 230hp STD Black / Gulfstream</div>
+										<div class="pg_item_price">1 323 700 ₽</div>
+									</div>
+								</a>
+							</div>
+							<div class="pg_item_changeable">
+								<div class="pg_item_like_wrapper">
+									<button class="pg_item_like"></button>
+								</div>
+								<div class="pg_item_not_available">
+									<span>нет в наличии</span>
+									<span class="report_btn">Сообщить о поступлении</span>
+								</div>
+								<a href="" class="pg_item_container">
+									<div class="show_product">посмотреть товар</div>
+									<div class="pg_item_decor"></div>
+									<div class="pg_item_empty"></div>
+									<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
+									<div class="pg_item_content">
+										<div class="pg_item_photo"><img src="img/goods/jet_ski_white.png" alt=""></div>
+										<div class="pg_item_title">Гидроцикл BRP SeaDoo GTX 300hp LTD Liquid Metal</div>
+										<div class="pg_item_price">1 543 000 ₽</div>
+									</div>
+								</a>
+							</div>
+							<div class="pg_item_changeable">
+								<div class="pg_item_like_wrapper">
+									<button class="pg_item_like"></button>
+								</div>
+								<div class="pg_item_not_available">
+									<span>нет в наличии</span>
+									<span class="report_btn">Сообщить о поступлении</span>
+								</div>
+								<a href="" class="pg_item_container">
+									<div class="show_product">посмотреть товар</div>
+									<div class="pg_item_decor"></div>
+									<div class="pg_item_empty"></div>
+									<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
+									<div class="pg_item_content">
+										<div class="pg_item_photo"><img src="img/goods/jet_ski_orange_02.png" alt=""></div>
+										<div class="pg_item_title">Гидроцикл BRP SeaDoo Spark 60hp 2 up</div>
+										<div class="pg_item_price">732 345 ₽</div>
+									</div>
+								</a>
+							</div>
+							<div class="pg_item_changeable">
+								<div class="pg_item_like_wrapper">
+									<button class="pg_item_like"></button>
+								</div>
+								<div class="pg_item_not_available">
+									<span>нет в наличии</span>
+									<span class="report_btn">Сообщить о поступлении</span>
+								</div>
+								<a href="" class="pg_item_container">
+									<div class="show_product">посмотреть товар</div>
+									<div class="pg_item_decor"></div>
+									<div class="pg_item_empty"></div>
+									<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
+									<div class="pg_item_content">
+										<div class="pg_item_photo"><img src="img/goods/jet_ski_turquoise.png" alt=""></div>
+										<div class="pg_item_title">Гидроцикл BRP SeaDoo Spark GTS 90hp Rental</div>
+										<div class="pg_item_price">857 666 ₽</div>
+									</div>
+								</a>
+							</div>
+							<div class="pg_item_changeable">
+								<div class="pg_item_like_wrapper">
+									<button class="pg_item_like"></button>
+								</div>
+								<div class="pg_item_not_available">
+									<span>нет в наличии</span>
+									<span class="report_btn">Сообщить о поступлении</span>
+								</div>
+								<a href="" class="pg_item_container">
+									<div class="show_product">посмотреть товар</div>
+									<div class="pg_item_decor"></div>
+									<div class="pg_item_empty"></div>
+									<div class="pg_item_sale">sale</div>
+									<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
+									<div class="pg_item_content">
+										<div class="pg_item_photo"><img src="img/goods/jet_ski_red_and_turquoise.png" alt=""></div>
+										<div class="pg_item_title">Гидроцикл BRP SeaDoo WAKE 230hp PRO Teal blue</div>
+										<div class="pg_item_price">1 229 711 ₽</div>
+									</div>
+								</a>
+							</div>
+							<div class="pg_item_changeable">
+								<div class="pg_item_like_wrapper">
+									<button class="pg_item_like"></button>
+								</div>
+								<div class="pg_item_not_available">
+									<span>нет в наличии</span>
+									<span class="report_btn">Сообщить о поступлении</span>
+								</div>
+								<a href="" class="pg_item_container">
+									<div class="show_product">посмотреть товар</div>
+									<div class="pg_item_decor"></div>
+									<div class="pg_item_empty"></div>
+									<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
+									<div class="pg_item_content">
+										<div class="pg_item_photo"><img src="img/goods/jet_ski_red.png" alt=""></div>
+										<div class="pg_item_title">Гидроцикл Spark 2-UP 900 Ho Ace Chili Pepper</div>
+										<div class="pg_item_price">587 440 ₽</div>
+									</div>
+								</a>
+							</div>
+							<div class="pg_item_changeable">
+								<div class="pg_item_like_wrapper">
+									<button class="pg_item_like"></button>
+								</div>
+								<div class="pg_item_not_available">
+									<span>нет в наличии</span>
+									<span class="report_btn">Сообщить о поступлении</span>
+								</div>
+								<a href="" class="pg_item_container">
+									<div class="show_product">посмотреть товар</div>
+									<div class="pg_item_decor"></div>
+									<div class="pg_item_empty"></div>
+									<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
+									<div class="pg_item_content">
+										<div class="pg_item_photo"><img src="img/goods/jet_ski_yellow.png" alt=""></div>
+										<div class="pg_item_title">Гидроцикл Spark 2-UP 900 Ho Ace Pineapple</div>
+										<div class="pg_item_price">587 440 ₽</div>
+									</div>
+								</a>
+							</div>
+							<div class="pg_item_changeable not_available">
+								<div class="pg_item_like_wrapper">
+									<button class="pg_item_like"></button>
+								</div>
+								<div class="pg_item_not_available">
+									<span>нет в наличии</span>
+									<span class="report_btn">Сообщить о поступлении</span>
+								</div>
+								<a href="" class="pg_item_container">
+									<div class="show_product">посмотреть товар</div>
+									<div class="pg_item_decor"></div>
+									<div class="pg_item_empty"></div>
+									<div class="pg_item_sale">sale</div>
+									<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
+									<div class="pg_item_content">
+										<div class="pg_item_photo"><img src="img/goods/jet_ski_white.png" alt=""></div>
+										<div class="pg_item_title">Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla</div>
+										<div class="pg_item_price">587 440 ₽</div>
+									</div>
+								</a>
+							</div>
+							<div class="pg_item_changeable not_available">
+								<div class="pg_item_like_wrapper">
+									<button class="pg_item_like"></button>
+								</div>
+								<div class="pg_item_not_available">
+									<span>нет в наличии</span>
+									<span class="report_btn">Сообщить о поступлении</span>
+								</div>
+								<a href="" class="pg_item_container">
+									<div class="show_product">посмотреть товар</div>
+									<div class="pg_item_decor"></div>
+									<div class="pg_item_empty"></div>
+									<div class="pg_item_cart"><img src="img/icons/white_cart.svg" alt=""></div>
+									<div class="pg_item_content">
+										<div class="pg_item_photo"><img src="img/goods/jet_ski_blue_03.png" alt=""></div>
+										<div class="pg_item_title">Гидроцикл Spark 3-UP 900 HO Ace IBR Blueberry</div>
+										<div class="pg_item_price">587 440 ₽</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="navigation_block">
+							<div class="navigation">
+								<ul class="navigation_list">
+									<li><a href="" class="navigation_link _active"><span>1</span></a></li>
+									<li><a href="" class="navigation_link"><span>2</span></a></li>
+									<li><a href="" class="navigation_link"><span>3</span></a></li>
+									<li><a href="" class="navigation_link"><span>4</span></a></li>
+									<li><a href="" class="navigation_link"><span>5</span></a></li>
+									...
+									<li><a href="" class="navigation_link"><span>11</span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 			<section class="buy_with">
