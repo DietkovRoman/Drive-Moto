@@ -100,22 +100,6 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
   font-display: swap;
 }
-@font-face {
-  font-family: "Barlow";
-  src: url("../fonts/Barlow-Bold.eot");
-  src: url("../fonts/Barlow-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Barlow-Bold.woff2") format("woff2"), url("../fonts/Barlow-Bold.woff") format("woff"), url("../fonts/Barlow-Bold.ttf") format("truetype"), url("../fonts/Barlow-Bold.svg#Barlow-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Proxima Nova";
-  src: url("../fonts/ProximaNova-Regular.eot");
-  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
 body {
   font-family: "SF Pro Display";
   font-weight: normal;
@@ -197,7 +181,7 @@ body {
 
 .header_location {
   position: relative;
-  padding-left: 28px;
+  padding-left: 1.75rem;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -246,11 +230,11 @@ body {
 
 .show_btn {
   display: block;
-  margin-top: 20px;
+  margin-top: 1.25rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   text-decoration-line: underline;
   color: #1C62CD;
   background-color: transparent;
@@ -267,11 +251,11 @@ body {
 .form__label .caption, .brand_form__label .caption, .model_form__label .caption, .country_form__label .caption {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #000000;
   display: block;
-  padding-left: 26px;
+  padding-left: 1.75rem;
 }
 .form__label .caption::before, .brand_form__label .caption::before, .model_form__label .caption::before, .country_form__label .caption::before {
   content: "";
@@ -314,7 +298,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
   position: relative;
-  row-gap: 5px;
+  row-gap: 0.3125rem;
   z-index: 1002;
 }
 @media (max-width: 768px) {
@@ -329,7 +313,7 @@ body {
     bottom: -53px;
     left: 0;
     width: 100%;
-    padding: 15px 0;
+    padding: 0.9375em 0;
     background-color: #F0F0F4;
     justify-content: space-around;
   }
@@ -357,7 +341,7 @@ body {
 }
 @media (max-width: 576px) {
   .menu_list li .menu_link {
-    padding: 15px 0;
+    padding: 0.9375em 0;
   }
 }
 .menu_list li .menu_link:hover {
@@ -366,14 +350,14 @@ body {
 
 .buy_btn {
   display: block;
-  max-width: 177px;
+  max-width: 12.5rem;
   background-color: #1C62CD;
   border-radius: 3px;
-  padding: 16px 53px 17px;
+  padding: 0.875rem 3.4375rem 1rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   text-align: center;
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -392,18 +376,18 @@ body {
 
 .so_price_new {
   font-weight: 700;
-  font-size: 27px;
-  line-height: 32px;
+  font-size: 1.9375rem;
+  line-height: 2.3125rem;
   color: #1C62CD;
-  padding: 3px 7px 0 0;
+  padding: 0.3125rem 0.4375rem 0 0;
 }
 
 .so_price_old {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #C4C4C4;
-  padding-right: 4px;
+  padding-right: 0.375rem;
   position: relative;
 }
 .so_price_old::before {
@@ -417,10 +401,35 @@ body {
   background-color: #C4C4C4;
 }
 
+.pg_content_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pg_content_bottom .show_more_btn {
+  display: flex;
+  padding: 1.1875rem 2.8125rem 1.0625rem 2.8125rem;
+  background-color: #F0F0F4;
+  justify-content: center;
+  align-items: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #2F3035;
+  transition: all 0.5s ease 0s;
+}
+.pg_content_bottom .show_more_btn:hover {
+  background-color: #1C62CD;
+  color: #fff;
+}
+
 .cart_product_item {
   display: flex;
   flex-direction: column;
-  row-gap: 20px;
+  row-gap: 1.375rem;
   flex: 0 1 500px;
   position: relative;
   padding-top: 60px;
@@ -432,7 +441,7 @@ body {
 }
 @media (max-width: 992px) {
   .cart_product_item {
-    row-gap: 10px;
+    row-gap: 0.625em;
   }
 }
 @media (max-width: 576px) {
@@ -446,16 +455,16 @@ body {
   top: 0;
   left: 0;
   display: flex;
-  padding: 13px 24px 13px 26px;
+  padding: 0.9375rem 1.75rem 0.9375rem;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 1.0625rem;
+  line-height: 1.375rem;
   letter-spacing: 0.12em;
   color: #fff;
   background-color: #1C62CD;
   border-radius: 3px;
-  max-width: 94px;
-  max-height: 44px;
+  max-width: 6.875rem;
+  max-height: 3.125rem;
   text-transform: uppercase;
 }
 .cart_product_item::before:hover {
@@ -480,14 +489,13 @@ body {
   align-items: center;
 }
 .cart_product_item .ct_item_prices .so_price_old {
-  max-width: 160px;
+  max-width: 11.25rem;
   padding: 0;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 36px;
-  color: #000000;
-  opacity: 0.6;
+  color: #666666;
 }
 @media (max-width: 1200px) {
   .cart_product_item .ct_item_prices .so_price_old {
@@ -503,7 +511,7 @@ body {
   left: 0;
   bottom: 18px;
   width: 100%;
-  background-color: #2F3035;
+  background-color: #000000;
   transform: rotate(-10deg);
 }
 .cart_product_item .ct_item_prices .so_price_new {
@@ -538,8 +546,8 @@ body {
 .cart_product_item .ct_item_prices .cheaper {
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
   color: #1C62CD;
 }
 .cart_product_item .ct_item_prices .cheaper:hover {
@@ -550,23 +558,6 @@ body {
   display: flex;
   position: relative;
   flex: 0 1 270px;
-  /*&::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba($color: #000000, $alpha: 0.05);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.5s ease 0s;
-
-    @media (max-width: 992px) {
-      opacity: 1;
-      visibility: visible;
-    }
-  }*/
 }
 .pg_item:hover .pg_item_container, .pg_item_changeable:hover .pg_item_container {
   box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
@@ -604,7 +595,7 @@ body {
   display: none;
 }
 .pg_item .pg_item_container, .pg_item_changeable .pg_item_container {
-  padding: 37px 20px 15px 20px;
+  padding: 2.5rem 1.375rem 1.0625rem 1.375rem;
   position: relative;
   width: 100%;
   height: 100%;
@@ -708,8 +699,8 @@ body {
   z-index: 2;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   letter-spacing: 0.07em;
   color: #fff;
   display: flex;
@@ -745,7 +736,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
+  gap: 1rem;
   position: relative;
   top: 0;
   left: 0;
@@ -754,7 +745,7 @@ body {
   z-index: 1;
 }
 .pg_item .pg_item_container .pg_item_content .pg_item_content_top, .pg_item_changeable .pg_item_container .pg_item_content .pg_item_content_top {
-  margin-top: 36px;
+  margin-top: 2.5rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -795,11 +786,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 0 20px;
+  padding: 0.75rem 0 1.375rem;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
   font-size: 30px;
   line-height: 36px;
   color: #2F3035;
@@ -837,11 +826,6 @@ body {
     width: auto;
   }
 }
-@media (min-width: 768px) {
-  ._active_pg_item .pg_item_container .pg_item_content .pg_item_photo img {
-    width: auto !important;
-  }
-}
 @media (max-width: 768px) {
   ._active_pg_item .pg_item_container .pg_item_content .pg_item_photo img {
     width: auto;
@@ -875,7 +859,7 @@ body {
 }
 .not_available .pg_item_not_available {
   display: flex;
-  gap: 13px;
+  gap: 0.9375rem;
   flex-direction: column;
   align-items: center;
   background-color: #fff;
@@ -890,15 +874,15 @@ body {
 .not_available .pg_item_not_available span {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
   color: #2F3035;
 }
 .not_available .pg_item_not_available .report_btn {
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
   color: #1C62CD;
   text-decoration: underline;
   transition: all 0.3s ease 0s;
@@ -925,14 +909,14 @@ body {
 .options .filter_title {
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
   text-align: center;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #fff;
   background-color: #1C62CD;
-  padding: 17px 85px 15px;
+  padding: 1.1875rem 5.625rem 1.0625rem;
   transition: all 0.3s ease 0s;
   display: block;
   max-width: 290px;
@@ -953,7 +937,7 @@ body {
 @media (max-width: 576px) {
   .options .options_block {
     display: none;
-    padding-top: 20px;
+    padding-top: 1.25em;
     justify-content: center;
   }
 }
@@ -972,7 +956,7 @@ body {
   flex-wrap: wrap;
   padding-bottom: 45px;
   width: 100%;
-  gap: 42px;
+  gap: 2.8125rem;
 }
 @media (max-width: 1200px) {
   .options .options_block .tabs .tabs-nav {
@@ -1016,7 +1000,7 @@ body {
   visibility: visible;
 }
 .options .options_block .tabs .tabs__content {
-  margin-bottom: 15px;
+  margin-bottom: 1.0625rem;
 }
 @media (max-width: 576px) {
   .options .options_block .tabs .tabs__content {
@@ -1036,11 +1020,11 @@ body {
 .options .options_block .tabs .tabs__content .pc_tab .country .brand_title, .options .options_block .tabs .tabs__content .pc_tab .country .model_title, .options .options_block .tabs .tabs__content .pc_tab .country .stock_title, .options .options_block .tabs .tabs__content .pc_tab .country .country_title {
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
   color: #2F3035;
   background-color: #fff;
-  padding-left: 26px;
+  padding-left: 1.75rem;
   position: relative;
 }
 .options .options_block .tabs .tabs__content .pc_tab .availability .availability_title::after, .options .options_block .tabs .tabs__content .pc_tab .availability .novelties_title::after, .options .options_block .tabs .tabs__content .pc_tab .availability .price_title::after,
@@ -1109,8 +1093,8 @@ body {
 .options .options_block .tabs .tabs__content .pc_tab .availability .form, .options .options_block .tabs .tabs__content .pc_tab .availability .brand_form, .options .options_block .tabs .tabs__content .pc_tab .novelties .form, .options .options_block .tabs .tabs__content .pc_tab .novelties .brand_form, .options .options_block .tabs .tabs__content .pc_tab .price .form, .options .options_block .tabs .tabs__content .pc_tab .price .brand_form, .options .options_block .tabs .tabs__content .pc_tab .brand .form, .options .options_block .tabs .tabs__content .pc_tab .brand .brand_form, .options .options_block .tabs .tabs__content .pc_tab .model .form, .options .options_block .tabs .tabs__content .pc_tab .model .brand_form, .options .options_block .tabs .tabs__content .pc_tab .stock .form, .options .options_block .tabs .tabs__content .pc_tab .stock .brand_form, .options .options_block .tabs .tabs__content .pc_tab .country .form, .options .options_block .tabs .tabs__content .pc_tab .country .brand_form {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  margin-top: 20px;
+  gap: 1.375rem;
+  margin-top: 1.375rem;
 }
 .options .options_block .tabs .tabs__content .pc_tab .novelties, .options .options_block .tabs .tabs__content .pc_tab .price {
   margin-top: 40px;
@@ -1121,7 +1105,7 @@ body {
   }
 }
 .options .options_block .tabs .tabs__content .pc_tab .price price-range {
-  margin-top: 20px;
+  margin-top: 1.375rem;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -1140,7 +1124,7 @@ body {
   position: relative;
   width: 100%;
   height: var(--thumb-size);
-  margin-bottom: 23px;
+  margin-bottom: 1.5625rem;
 }
 .options .options_block .tabs .tabs__content .pc_tab .price price-range > div > div {
   width: 100%;
@@ -1232,14 +1216,14 @@ body {
   height: auto;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #C4C4C4;
 }
 .options .options_block .tabs .tabs__content .pc_tab .price .price_output span {
   text-decoration-line: underline;
   color: #2F3035;
-  padding: 0 12px;
+  padding: 0 0.875rem;
 }
 .options .options_block .tabs .tabs__content .pc_tab .price .price_output price-range output-start,
 .options .options_block .tabs .tabs__content .pc_tab .price .price_output price-range output-end {
@@ -1254,10 +1238,10 @@ body {
 .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed {
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
   color: #2F3035;
-  padding-top: 40px;
+  padding-top: 2.75rem;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -1278,13 +1262,13 @@ body {
   top: -8px;
 }
 .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .hp_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ep_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ms_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .hp_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ep_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ms_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .hp_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ep_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ms_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .hp_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ep_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ms_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .hp_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ep_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ms_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .hp_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ep_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ms_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .hp_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ep_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ms_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .hp_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ep_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ms_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .hp_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ep_dropdown-btn, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ms_dropdown-btn {
-  padding: 8px 10px;
+  padding: 0.625rem 0.75rem;
   background: #ffffff;
   cursor: pointer;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #2F3035;
   position: relative;
 }
@@ -1335,18 +1319,18 @@ body {
   z-index: 100;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: rgba(0, 0, 0, 0.6);
   width: 100%;
 }
 .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .hp_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .hp_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .hp_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ep_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ep_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ep_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ms_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ms_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ms_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .hp_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .hp_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .hp_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ep_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ep_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ep_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ms_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ms_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ms_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .hp_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .hp_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .hp_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ep_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ep_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ep_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ms_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ms_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ms_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .hp_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .hp_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .hp_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ep_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ep_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ep_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ms_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ms_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ms_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .hp_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .hp_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .hp_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ep_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ep_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ep_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ms_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ms_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ms_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .hp_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .hp_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .hp_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ep_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ep_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ep_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ms_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ms_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ms_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .hp_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .hp_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .hp_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ep_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ep_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ep_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ms_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ms_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ms_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .hp_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .hp_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .hp_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ep_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ep_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ep_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ms_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ms_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ms_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .hp_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .hp_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .hp_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ep_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ep_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ep_dropdown-content .ms_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ms_dropdown-content .hp_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ms_dropdown-content .ep_dropdown-item, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ms_dropdown-content .ms_dropdown-item {
   width: 100%;
-  padding: 8px 15px;
+  padding: 0.625rem 1.0625rem;
   cursor: pointer;
 }
 .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .hp_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .hp_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .hp_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ep_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ep_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ep_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ms_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ms_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ms_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .hp_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .hp_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .hp_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ep_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ep_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ep_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ms_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ms_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ms_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .hp_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .hp_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .hp_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ep_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ep_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ep_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ms_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ms_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ms_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .hp_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .hp_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .hp_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ep_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ep_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ep_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ms_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ms_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ms_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .hp_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .hp_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .hp_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ep_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ep_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ep_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ms_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ms_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ms_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .hp_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .hp_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .hp_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ep_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ep_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ep_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ms_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ms_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ms_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .hp_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .hp_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .hp_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ep_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ep_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ep_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ms_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ms_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ms_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .hp_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .hp_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .hp_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ep_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ep_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ep_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ms_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ms_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ms_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .hp_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .hp_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .hp_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ep_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ep_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ep_dropdown-content .ms_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ms_dropdown-content .hp_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ms_dropdown-content .ep_dropdown-item:first-child, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ms_dropdown-content .ms_dropdown-item:first-child {
-  margin-top: 15px;
+  margin-top: 1.0625rem;
 }
 .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .hp_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .hp_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .hp_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ep_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ep_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ep_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ms_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ms_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .hp_dropdown .ms_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .hp_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .hp_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .hp_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ep_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ep_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ep_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ms_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ms_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ep_dropdown .ms_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .hp_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .hp_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .hp_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ep_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ep_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ep_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ms_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ms_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .horse_power .ms_dropdown .ms_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .hp_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .hp_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .hp_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ep_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ep_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ep_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ms_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ms_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .hp_dropdown .ms_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .hp_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .hp_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .hp_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ep_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ep_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ep_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ms_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ms_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ep_dropdown .ms_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .hp_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .hp_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .hp_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ep_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ep_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ep_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ms_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ms_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .engine_power .ms_dropdown .ms_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .hp_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .hp_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .hp_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ep_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ep_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ep_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ms_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ms_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .hp_dropdown .ms_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .hp_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .hp_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .hp_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ep_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ep_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ep_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ms_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ms_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ep_dropdown .ms_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .hp_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .hp_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .hp_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ep_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ep_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ep_dropdown-content .ms_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ms_dropdown-content .hp_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ms_dropdown-content .ep_dropdown-item:hover, .options .options_block .tabs .tabs__content .pc_tab .option_filters .max_speed .ms_dropdown .ms_dropdown-content .ms_dropdown-item:hover {
   background-color: rgba(107, 126, 172, 0.05);
@@ -1387,7 +1371,7 @@ body {
 }
 .options .options_block .tabs .tabs__content .pc_tab .brand .brand_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .brand .model_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .brand .stock_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .brand .country_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .model .brand_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .model .model_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .model .stock_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .model .country_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .stock .brand_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .stock .model_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .stock .stock_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .stock .country_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .country .brand_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .country .model_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .country .stock_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .country .country_content .brand_form {
   max-width: 290px;
-  column-gap: 90px;
+  column-gap: 5.9375rem;
 }
 @media (max-width: 576px) {
   .options .options_block .tabs .tabs__content .pc_tab .brand .brand_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .brand .model_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .brand .stock_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .brand .country_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .model .brand_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .model .model_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .model .stock_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .model .country_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .stock .brand_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .stock .model_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .stock .stock_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .stock .country_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .country .brand_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .country .model_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .country .stock_content .brand_form, .options .options_block .tabs .tabs__content .pc_tab .country .country_content .brand_form {
@@ -1402,15 +1386,15 @@ body {
 }
 .options .options_block .tabs .tabs__content .pc_tab .brand .brand_content .model_form .input-search, .options .options_block .tabs .tabs__content .pc_tab .brand .model_content .model_form .input-search, .options .options_block .tabs .tabs__content .pc_tab .brand .stock_content .model_form .input-search, .options .options_block .tabs .tabs__content .pc_tab .brand .country_content .model_form .input-search, .options .options_block .tabs .tabs__content .pc_tab .model .brand_content .model_form .input-search, .options .options_block .tabs .tabs__content .pc_tab .model .model_content .model_form .input-search, .options .options_block .tabs .tabs__content .pc_tab .model .stock_content .model_form .input-search, .options .options_block .tabs .tabs__content .pc_tab .model .country_content .model_form .input-search, .options .options_block .tabs .tabs__content .pc_tab .stock .brand_content .model_form .input-search, .options .options_block .tabs .tabs__content .pc_tab .stock .model_content .model_form .input-search, .options .options_block .tabs .tabs__content .pc_tab .stock .stock_content .model_form .input-search, .options .options_block .tabs .tabs__content .pc_tab .stock .country_content .model_form .input-search, .options .options_block .tabs .tabs__content .pc_tab .country .brand_content .model_form .input-search, .options .options_block .tabs .tabs__content .pc_tab .country .model_content .model_form .input-search, .options .options_block .tabs .tabs__content .pc_tab .country .stock_content .model_form .input-search, .options .options_block .tabs .tabs__content .pc_tab .country .country_content .model_form .input-search {
   width: 100%;
-  margin: 20px 0;
-  padding: 8px 20px;
+  margin: 1.375rem 0;
+  padding: 0.625rem 1.375rem;
   border: 1px solid #E0E0E0;
 }
 .options .options_block .tabs .tabs__content .pc_tab .brand .brand_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .brand .brand_content .country_form_checks, .options .options_block .tabs .tabs__content .pc_tab .brand .model_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .brand .model_content .country_form_checks, .options .options_block .tabs .tabs__content .pc_tab .brand .stock_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .brand .stock_content .country_form_checks, .options .options_block .tabs .tabs__content .pc_tab .brand .country_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .brand .country_content .country_form_checks, .options .options_block .tabs .tabs__content .pc_tab .model .brand_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .model .brand_content .country_form_checks, .options .options_block .tabs .tabs__content .pc_tab .model .model_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .model .model_content .country_form_checks, .options .options_block .tabs .tabs__content .pc_tab .model .stock_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .model .stock_content .country_form_checks, .options .options_block .tabs .tabs__content .pc_tab .model .country_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .model .country_content .country_form_checks, .options .options_block .tabs .tabs__content .pc_tab .stock .brand_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .stock .brand_content .country_form_checks, .options .options_block .tabs .tabs__content .pc_tab .stock .model_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .stock .model_content .country_form_checks, .options .options_block .tabs .tabs__content .pc_tab .stock .stock_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .stock .stock_content .country_form_checks, .options .options_block .tabs .tabs__content .pc_tab .stock .country_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .stock .country_content .country_form_checks, .options .options_block .tabs .tabs__content .pc_tab .country .brand_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .country .brand_content .country_form_checks, .options .options_block .tabs .tabs__content .pc_tab .country .model_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .country .model_content .country_form_checks, .options .options_block .tabs .tabs__content .pc_tab .country .stock_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .country .stock_content .country_form_checks, .options .options_block .tabs .tabs__content .pc_tab .country .country_content .model_form_checks, .options .options_block .tabs .tabs__content .pc_tab .country .country_content .country_form_checks {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 12px;
+  gap: 0.875rem;
 }
 .options .options_block .tabs .tabs__content .pc_tab .brand .brand_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .brand .brand_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .brand .brand_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .brand .brand_content .country_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .brand .model_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .brand .model_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .brand .model_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .brand .model_content .country_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .brand .stock_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .brand .stock_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .brand .stock_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .brand .stock_content .country_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .brand .country_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .brand .country_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .brand .country_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .brand .country_content .country_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .brand_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .brand_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .brand_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .brand_content .country_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .model_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .model_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .model_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .model_content .country_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .stock_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .stock_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .stock_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .stock_content .country_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .country_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .country_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .country_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .model .country_content .country_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .brand_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .brand_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .brand_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .brand_content .country_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .model_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .model_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .model_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .model_content .country_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .stock_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .stock_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .stock_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .stock_content .country_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .country_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .country_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .country_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .stock .country_content .country_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .brand_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .brand_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .brand_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .brand_content .country_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .model_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .model_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .model_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .model_content .country_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .stock_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .stock_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .stock_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .stock_content .country_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .country_content .model_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .country_content .model_form_checks .country_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .country_content .country_form_checks .model_form__label, .options .options_block .tabs .tabs__content .pc_tab .country .country_content .country_form_checks .country_form__label {
   flex: 0 0 130px;
@@ -1421,11 +1405,11 @@ body {
   }
 }
 .options .options_block .tabs .tabs__content .pc_tab .brand .brand_content .stock_btn, .options .options_block .tabs .tabs__content .pc_tab .brand .model_content .stock_btn, .options .options_block .tabs .tabs__content .pc_tab .brand .stock_content .stock_btn, .options .options_block .tabs .tabs__content .pc_tab .brand .country_content .stock_btn, .options .options_block .tabs .tabs__content .pc_tab .model .brand_content .stock_btn, .options .options_block .tabs .tabs__content .pc_tab .model .model_content .stock_btn, .options .options_block .tabs .tabs__content .pc_tab .model .stock_content .stock_btn, .options .options_block .tabs .tabs__content .pc_tab .model .country_content .stock_btn, .options .options_block .tabs .tabs__content .pc_tab .stock .brand_content .stock_btn, .options .options_block .tabs .tabs__content .pc_tab .stock .model_content .stock_btn, .options .options_block .tabs .tabs__content .pc_tab .stock .stock_content .stock_btn, .options .options_block .tabs .tabs__content .pc_tab .stock .country_content .stock_btn, .options .options_block .tabs .tabs__content .pc_tab .country .brand_content .stock_btn, .options .options_block .tabs .tabs__content .pc_tab .country .model_content .stock_btn, .options .options_block .tabs .tabs__content .pc_tab .country .stock_content .stock_btn, .options .options_block .tabs .tabs__content .pc_tab .country .country_content .stock_btn {
-  padding: 6px 15px 4px;
+  padding: 0.5rem 1.0625rem 0.375rem;
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 0.875rem;
+  line-height: 1rem;
   letter-spacing: 0.07em;
   color: #C4C4C4;
   background-color: #F0F0F4;
@@ -1449,18 +1433,18 @@ body {
 }
 .options .options_block .tabs .tabs__content .pc_tab .brand .stock_content, .options .options_block .tabs .tabs__content .pc_tab .model .stock_content, .options .options_block .tabs .tabs__content .pc_tab .stock .stock_content, .options .options_block .tabs .tabs__content .pc_tab .country .stock_content {
   flex-direction: row !important;
-  padding-top: 20px;
-  gap: 10px;
+  padding-top: 1.375rem;
+  gap: 0.75rem;
 }
 .options .options_block .tabs .tabs__content .pc_tab .brand .country_content, .options .options_block .tabs .tabs__content .pc_tab .model .country_content, .options .options_block .tabs .tabs__content .pc_tab .stock .country_content, .options .options_block .tabs .tabs__content .pc_tab .country .country_content {
-  padding-top: 20px;
+  padding-top: 1.375rem;
 }
 .options .options_block .tabs .tabs__content .pc_tab .total {
   margin-top: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  gap: 1.0625rem;
 }
 @media (max-width: 1200px) {
   .options .options_block .tabs .tabs__content .pc_tab .total {
@@ -1469,20 +1453,20 @@ body {
 }
 @media (max-width: 992px) {
   .options .options_block .tabs .tabs__content .pc_tab .total {
-    gap: 10px;
+    gap: 0.625em;
   }
 }
 .options .options_block .tabs .tabs__content .pc_tab .total .choose_btn {
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
   text-align: center;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #BDBEC2;
   background-color: #F0F0F4;
-  padding: 17px 85px 15px;
+  padding: 1.1875rem 5.625rem 1.0625rem;
   transition: all 0.3s ease 0s;
 }
 .options .options_block .tabs .tabs__content .pc_tab .total .choose_btn:hover {
@@ -1496,13 +1480,13 @@ body {
 .options .options_block .tabs .tabs__content .pc_tab .total .extra_options .extra_options_title {
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
   color: #2F3035;
   background-color: transparent;
   position: relative;
-  margin-left: 30px;
-  padding-right: 30px;
+  margin-left: 2.0625rem;
+  padding-right: 2.0625rem;
 }
 .options .options_block .tabs .tabs__content .pc_tab .total .extra_options .extra_options_title::after {
   content: "";
@@ -1518,18 +1502,18 @@ body {
   transform: rotate(180deg);
 }
 .options .options_block .tabs .tabs__content .pc_tab .total .extra_options p {
-  padding: 20px 0;
+  padding: 1.375rem 0;
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
   color: #2F3035;
 }
 .options .options_block .tabs .tabs__content .pc_tab .total .reset_filter {
   font-style: normal;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
   text-decoration-line: underline;
   color: #C4C4C4;
   background-color: transparent;
@@ -1560,7 +1544,7 @@ body {
   }
 }
 .menu_bottom_list h2 {
-  margin: 65px 18px 136px 44px;
+  margin: 4.375rem 1.25rem 8.75rem 3rem;
   font-style: normal;
   font-weight: 700;
   color: #2F3035;
@@ -1610,8 +1594,8 @@ body {
   height: auto;
   font-style: normal;
   font-weight: 600;
-  font-size: 21px;
-  line-height: 25px;
+  font-size: 1.4375rem;
+  line-height: 1.6875rem;
   color: #2F3035;
 }
 .menu_bottom_list .shipping_and_payment::before {
@@ -1644,7 +1628,7 @@ body {
 .menu_bottom_list li .menu_bottom_link {
   display: block;
   position: relative;
-  padding: 15px 0 13px;
+  padding: 1.0625rem 0 0.9375rem;
   font-style: normal;
   font-weight: 400;
   text-transform: capitalize;
@@ -1694,7 +1678,7 @@ body {
 }
 @media (max-width: 576px) {
   .menu_bottom_list li .menu_bottom_link {
-    padding: 46px 0 0 53px;
+    padding: 2.75em 0 0 3.125em;
   }
 }
 .menu_bottom_list li .menu_bottom_link:hover {
@@ -1720,8 +1704,8 @@ body {
   align-items: center;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.375rem;
+  line-height: 1.625rem;
   color: #2F3035;
   opacity: 0;
   visibility: hidden;
@@ -1731,25 +1715,25 @@ body {
 }
 
 .footer_links_03 {
-  padding: 35px 0 25px;
+  padding: 2.5rem 0 1.75rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10px;
+  gap: 0.75rem;
   z-index: 1;
 }
 @media (max-width: 992px) {
   .footer_links_03 {
     flex-direction: column;
-    padding-top: 10px;
+    padding-top: 0.625em;
   }
 }
 .footer_links_03 a {
   font-style: normal;
   font-weight: 400;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
   color: #48494D;
   flex: 1 0 auto;
 }
@@ -1804,12 +1788,6 @@ body {
   display: flex;
   max-height: 405px;
   justify-content: center;
-  /*max-width: 270px;
-
-  @media (max-width: 320px) {
-    display: block;
-    max-width: none;
-  }*/
 }
 .pg_swiper_wrapper .pg_swiper-pagination_01, .pg_swiper_wrapper .pg_swiper-pagination_02,
 .pg_swiper_wrapper .pg_swiper-pagination_03, .pg_swiper_wrapper .pg_swiper-pagination_04,
@@ -1828,7 +1806,7 @@ body {
 .pg_swiper_wrapper .bw_swiper-pagination_05, .pg_swiper_wrapper .bw_swiper-pagination_06 {
     display: flex;
     justify-content: center;
-    margin: 20px 0;
+    margin: 1.375rem 0;
   }
   .pg_swiper_wrapper .pg_swiper-pagination_01 .swiper-pagination-bullet, .pg_swiper_wrapper .pg_swiper-pagination_02 .swiper-pagination-bullet,
 .pg_swiper_wrapper .pg_swiper-pagination_03 .swiper-pagination-bullet, .pg_swiper_wrapper .pg_swiper-pagination_04 .swiper-pagination-bullet,
@@ -1964,7 +1942,7 @@ body {
     min-height: 67px;
   }
   .wrapper .header .header_content .header_top .menu_icon, .wrapper .header .header_content .header_top .header_logo, .wrapper .header .header_content .header_top .header_controls {
-    margin-top: 20px;
+    margin-top: 1.25em;
   }
 }
 .wrapper .header .header_content .header_top .menu_icon {
@@ -2020,7 +1998,8 @@ body {
     left: -100%;
     width: 100%;
     height: 100%;
-    padding: 120px 0 0 0;
+    background-color: transparent;
+    padding: 7em 0 0 0;
     transition: all 0.4s ease 0s;
     overflow: auto;
     z-index: 101;
@@ -2053,8 +2032,8 @@ body {
   font-family: "Staatliches";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 25px;
+  font-size: 1.375rem;
+  line-height: 1.6875rem;
   text-transform: capitalize;
   color: #2F3035;
 }
@@ -2066,8 +2045,8 @@ body {
 }
 .wrapper .header .header_content .header_top .header_controls {
   display: flex;
-  gap: 10px;
-  margin-right: 20px;
+  gap: 0.75rem;
+  margin-right: 1.375rem;
   z-index: 1002;
 }
 @media (max-width: 992px) {
@@ -2097,8 +2076,8 @@ body {
   align-items: center;
   font-style: normal;
   font-weight: 500;
-  font-size: 10px;
-  line-height: 12px;
+  font-size: 0.75rem;
+  line-height: 0.875rem;
   color: #fff;
   position: absolute;
   bottom: -4px;
@@ -2118,8 +2097,7 @@ body {
 }
 .wrapper .main .slider_block {
   width: 100%;
-  margin-top: 172px;
-  padding: 80px 0;
+  margin-top: 11.25rem;
   padding-top: 80px;
   padding-bottom: 80px;
   background-color: #fff;
@@ -2136,7 +2114,7 @@ body {
 }
 @media (max-width: 768px) {
   .wrapper .main .slider_block {
-    gap: 6px;
+    gap: 0.375em;
     padding-top: 120px;
     padding-bottom: 120px;
   }
@@ -2153,18 +2131,18 @@ body {
 }
 @media (max-width: 576px) {
   .wrapper .main .slider_block {
-    margin-top: 120px;
+    margin-top: 7.5em;
   }
 }
 .wrapper .main .slider_block .slider_content {
   display: flex;
   flex: 1 1 auto;
   justify-content: space-between;
-  gap: 36px;
+  gap: 2.5rem;
 }
 @media (max-width: 992px) {
   .wrapper .main .slider_block .slider_content {
-    gap: 6px;
+    gap: 0.375em;
   }
 }
 @media (max-width: 768px) {
@@ -2175,7 +2153,7 @@ body {
 }
 @media (max-width: 576px) {
   .wrapper .main .slider_block .slider_content {
-    gap: 30px;
+    gap: 1.875em;
   }
 }
 .wrapper .main .slider_block .slider_content .slider_swiper {
@@ -2206,8 +2184,6 @@ body {
 .wrapper .main .slider_block .slider_content .slider_swiper .swiper-wrapper .swiper-slide .slide_text {
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
-  line-height: 50px;
   font-size: 50px;
   line-height: 50px;
   text-align: center;
@@ -2269,7 +2245,7 @@ body {
   width: 11px;
   height: 11px;
   background: none;
-  margin: 0 4.5px;
+  margin: 0 0.40625rem;
   transition: all 0.3s ease 0s;
 }
 .wrapper .main .slider_block .slider_content .slider_swiper .slider_swiper-pagination .swiper-pagination-bullet:hover {
@@ -2363,10 +2339,10 @@ body {
   justify-content: space-between;
 }
 .wrapper .main .slider_block .slider_content .special_offer .so_prices .so_promotion {
-  padding: 8px 20px;
+  padding: 0.625rem 1.375rem;
   background-color: #1C62CD;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #fff;
@@ -2382,19 +2358,19 @@ body {
   flex-direction: column;
   font-family: "Barlow";
   font-style: normal;
-  gap: 7px;
+  gap: 0.5625rem;
   text-align: end;
 }
 .wrapper .main .slider_block .slider_content .special_offer .product_photo {
   display: flex;
   justify-content: center;
-  padding: 8px 20px 4px 0;
+  padding: 0.625rem 1.375rem 0.375rem 0;
 }
 .wrapper .main .slider_block .slider_content .special_offer .product_title {
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
   text-align: center;
   color: #2F3035;
 }
@@ -2407,24 +2383,23 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 7px;
+  margin-top: 0.5625rem;
   background-color: #F0F0F4;
   flex: 1 1 auto;
-  padding: 25px 20px;
+  padding: 1.6875rem 1.375rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+  font-size: 1.25rem;
+  line-height: 1.4375rem;
   text-align: center;
   color: #2F3035;
 }
 .wrapper .main .slider_block .slider_content .special_offer .so_term span {
   display: block;
-  font-family: "Barlow";
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
   color: #1C62CD;
 }
 .wrapper .main .search_block {
@@ -2447,7 +2422,7 @@ body {
 @media (max-width: 576px) {
   .wrapper .main .search_block .search_block .tabs .tabs-nav {
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 0.75rem;
   }
 }
 .wrapper .main .search_block .search_block .tabs .tabs-nav .tabs_nav__item {
@@ -2547,18 +2522,18 @@ body {
 }
 .wrapper .main .search_block .search_block .tabs .tabs__content .tab .form_search .search-input {
   width: 100%;
-  padding: 15px 165px 15px 20px;
+  padding: 1.0625rem 10.625rem 1.0625rem 1.375rem;
   background-color: #F0F0F4;
   border-radius: 3px;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.125rem;
+  line-height: 1.3125rem;
   color: #656464;
 }
 @media (max-width: 576px) {
   .wrapper .main .search_block .search_block .tabs .tabs__content .tab .form_search .search-input {
-    padding: 15px 50px 15px 20px;
+    padding: 0.9375em 3.125em 0.9375em 1.25em;
   }
 }
 .wrapper .main .search_block .search_block .tabs .tabs__content .tab .form_search .search-submit {
@@ -2567,7 +2542,7 @@ body {
   right: 0;
   z-index: 1;
   height: 100%;
-  padding: 0 40px;
+  padding: 0 2.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2576,8 +2551,8 @@ body {
   border-radius: 3px;
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   letter-spacing: 0.12em;
   color: #fff;
   transition: all 0.3s ease 0s;
@@ -2631,22 +2606,21 @@ body {
 .wrapper .main .categories .categories_content {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 2.0625rem;
   flex-wrap: wrap;
 }
 @media (max-width: 992px) {
   .wrapper .main .categories .categories_content {
-    gap: 10px;
+    gap: 0.625em;
   }
 }
 .wrapper .main .categories .categories_content .categories_item {
   display: flex;
-  padding: 20px 35px 15px 20px;
   padding-top: 20px;
   padding-bottom: 15px;
   padding-left: 20px;
   padding-right: 35px;
-  gap: 12px;
+  gap: 0.875rem;
   border-radius: 3px;
   transition: all 0.5s ease 0s;
   width: 370px;
@@ -2676,7 +2650,7 @@ body {
   .wrapper .main .categories .categories_content .categories_item {
     width: 100%;
     justify-content: space-evenly;
-    gap: 6px;
+    gap: 0.375em;
     box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
   }
 }
@@ -2799,8 +2773,8 @@ body {
 .wrapper .main .categories .categories_content .categories_item .citem_nlc .citem_nl .read_more {
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #C4C4C4;
   position: relative;
 }
@@ -2836,8 +2810,8 @@ body {
 .wrapper .main .popular_goods .popular_goods_content h1, .wrapper .main .popular_goods .buy_with_content h1, .wrapper .main .buy_with .popular_goods_content h1, .wrapper .main .buy_with .buy_with_content h1 {
   font-style: normal;
   font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
+  font-size: 1.6875rem;
+  line-height: 2.0625rem;
   color: #2F3035;
   padding-bottom: 25px;
 }
@@ -2854,6 +2828,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 35px;
+  row-gap: 0.4375rem;
 }
 @media (max-width: 1200px) {
   .wrapper .main .popular_goods .popular_goods_content .tabs .tabs-nav, .wrapper .main .popular_goods .buy_with_content .tabs .tabs-nav, .wrapper .main .buy_with .popular_goods_content .tabs .tabs-nav, .wrapper .main .buy_with .buy_with_content .tabs .tabs-nav {
@@ -2862,7 +2837,7 @@ body {
 }
 @media (max-width: 576px) {
   .wrapper .main .popular_goods .popular_goods_content .tabs .tabs-nav, .wrapper .main .popular_goods .buy_with_content .tabs .tabs-nav, .wrapper .main .buy_with .popular_goods_content .tabs .tabs-nav, .wrapper .main .buy_with .buy_with_content .tabs .tabs-nav {
-    gap: 10px;
+    gap: 0.625em;
     justify-content: center;
     padding-bottom: 0;
   }
@@ -2870,13 +2845,14 @@ body {
 .wrapper .main .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .main .popular_goods .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item, .wrapper .main .popular_goods .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .main .popular_goods .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item, .wrapper .main .buy_with .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .main .buy_with .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item, .wrapper .main .buy_with .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .main .buy_with .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item {
   position: relative;
   cursor: pointer;
-  padding-right: 8px;
-  margin-right: 42px;
+  padding-right: 0.625rem;
+  padding-bottom: 0.75rem;
+  margin-right: 2.875rem;
   transition: all 0.3s ease 0s;
 }
 @media (max-width: 576px) {
   .wrapper .main .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .main .popular_goods .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item, .wrapper .main .popular_goods .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .main .popular_goods .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item, .wrapper .main .buy_with .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .main .buy_with .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item, .wrapper .main .buy_with .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item, .wrapper .main .buy_with .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item {
-    margin-right: 30px;
+    margin-right: 1.875em;
     padding-right: 0;
   }
 }
@@ -2886,7 +2862,7 @@ body {
 .wrapper .main .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .main .popular_goods .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item::after, .wrapper .main .popular_goods .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .main .popular_goods .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item::after, .wrapper .main .buy_with .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .main .buy_with .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item::after, .wrapper .main .buy_with .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .main .buy_with .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item::after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: 0;
   left: 0;
   width: 100%;
   height: 2px;
@@ -2894,11 +2870,6 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease 0s;
-}
-@media (max-width: 576px) {
-  .wrapper .main .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .main .popular_goods .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item::after, .wrapper .main .popular_goods .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .main .popular_goods .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item::after, .wrapper .main .buy_with .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .main .buy_with .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item::after, .wrapper .main .buy_with .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item::after, .wrapper .main .buy_with .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item::after {
-    bottom: -5px;
-  }
 }
 .wrapper .main .popular_goods .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item:hover, .wrapper .main .popular_goods .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item:hover, .wrapper .main .popular_goods .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item:hover, .wrapper .main .popular_goods .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item:hover, .wrapper .main .buy_with .popular_goods_content .tabs .tabs-nav .pg_tabs_nav__item:hover, .wrapper .main .buy_with .popular_goods_content .tabs .tabs-nav .bw_tabs_nav__item:hover, .wrapper .main .buy_with .buy_with_content .tabs .tabs-nav .pg_tabs_nav__item:hover, .wrapper .main .buy_with .buy_with_content .tabs .tabs-nav .bw_tabs_nav__item:hover {
   text-shadow: 0 0 0.6px #2F3035, 0 0 0.6px #2F3035;
@@ -2911,37 +2882,13 @@ body {
   visibility: visible;
 }
 .wrapper .main .popular_goods .popular_goods_content .tabs .tabs__content, .wrapper .main .popular_goods .buy_with_content .tabs .tabs__content, .wrapper .main .buy_with .popular_goods_content .tabs .tabs__content, .wrapper .main .buy_with .buy_with_content .tabs .tabs__content {
-  margin-bottom: 15px;
+  margin-bottom: 1.0625rem;
 }
 .wrapper .main .popular_goods .popular_goods_content .tabs .tabs__content .pg_tab, .wrapper .main .popular_goods .popular_goods_content .tabs .tabs__content .bw_tab, .wrapper .main .popular_goods .buy_with_content .tabs .tabs__content .pg_tab, .wrapper .main .popular_goods .buy_with_content .tabs .tabs__content .bw_tab, .wrapper .main .buy_with .popular_goods_content .tabs .tabs__content .pg_tab, .wrapper .main .buy_with .popular_goods_content .tabs .tabs__content .bw_tab, .wrapper .main .buy_with .buy_with_content .tabs .tabs__content .pg_tab, .wrapper .main .buy_with .buy_with_content .tabs .tabs__content .bw_tab {
   display: none;
 }
 .wrapper .main .popular_goods .popular_goods_content .tabs .tabs__content .is_active, .wrapper .main .popular_goods .buy_with_content .tabs .tabs__content .is_active, .wrapper .main .buy_with .popular_goods_content .tabs .tabs__content .is_active, .wrapper .main .buy_with .buy_with_content .tabs .tabs__content .is_active {
   display: block;
-}
-.wrapper .main .popular_goods .popular_goods_content .pg_content_bottom, .wrapper .main .popular_goods .buy_with_content .pg_content_bottom, .wrapper .main .buy_with .popular_goods_content .pg_content_bottom, .wrapper .main .buy_with .buy_with_content .pg_content_bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.wrapper .main .popular_goods .popular_goods_content .pg_content_bottom .show_more_btn, .wrapper .main .popular_goods .buy_with_content .pg_content_bottom .show_more_btn, .wrapper .main .buy_with .popular_goods_content .pg_content_bottom .show_more_btn, .wrapper .main .buy_with .buy_with_content .pg_content_bottom .show_more_btn {
-  display: flex;
-  padding: 17px 43px 15px 43px;
-  background-color: #F0F0F4;
-  justify-content: center;
-  align-items: center;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: #2F3035;
-  transition: all 0.5s ease 0s;
-}
-.wrapper .main .popular_goods .popular_goods_content .pg_content_bottom .show_more_btn:hover, .wrapper .main .popular_goods .buy_with_content .pg_content_bottom .show_more_btn:hover, .wrapper .main .buy_with .popular_goods_content .pg_content_bottom .show_more_btn:hover, .wrapper .main .buy_with .buy_with_content .pg_content_bottom .show_more_btn:hover {
-  background-color: #1C62CD;
-  color: #fff;
 }
 .wrapper .main .discounts {
   width: 100%;
@@ -2950,7 +2897,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  column-gap: 40px;
+  column-gap: 2.75rem;
   background-color: #1C62CD;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -3047,7 +2994,6 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
-  font-size: 24px;
   line-height: 50px;
   text-align: right;
   color: #2F3035;
@@ -3141,7 +3087,7 @@ body {
   }
 }
 .wrapper .page_content {
-  margin-top: 200px;
+  margin-top: 13.75rem;
   padding-top: 50px;
   display: flex;
   flex-direction: column;
@@ -3153,7 +3099,7 @@ body {
 }
 @media (max-width: 576px) {
   .wrapper .page_content {
-    margin-top: 110px;
+    margin-top: 6.875em;
   }
 }
 .wrapper .page_content .page_navigation {
@@ -3185,13 +3131,13 @@ body {
 @media (max-width: 576px) {
   .wrapper .page_content .page_navigation .pn_list {
     flex-wrap: wrap;
-    row-gap: 10px;
+    row-gap: 0.625em;
   }
 }
 .wrapper .page_content .page_navigation .pn_list > li {
   position: relative;
   display: inline-block;
-  margin-right: 26px;
+  margin-right: 1.75rem;
 }
 .wrapper .page_content .page_navigation .pn_list > li:not(:last-child)::after {
   content: "";
@@ -3228,8 +3174,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 25px;
-  column-gap: 10px;
+  row-gap: 1.75rem;
+  column-gap: 0.75rem;
 }
 @media (max-width: 576px) {
   .wrapper .page_content .pg_selected_block {
@@ -3240,8 +3186,8 @@ body {
   width: 100%;
   font-style: normal;
   font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 2rem;
+  line-height: 2.375rem;
   color: #2F3035;
 }
 .wrapper .page_content .pg_selected_block .multiselected_buttons, .wrapper .page_content .pg_selected_block .sorting_block {
@@ -3255,7 +3201,7 @@ body {
 .wrapper .page_content .pg_selected_block .multiselected_buttons {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 10px;
+  row-gap: 0.625rem;
   height: fit-content;
 }
 @media (max-width: 576px) {
@@ -3266,7 +3212,7 @@ body {
 .wrapper .page_content .pg_selected_block .multiselected_buttons .select {
   display: none;
   position: relative;
-  max-height: 25px;
+  max-height: 1.8125rem;
 }
 .wrapper .page_content .pg_selected_block .multiselected_buttons .select input:checked + label {
   background-color: #c1c1c1;
@@ -3283,16 +3229,16 @@ body {
   position: absolute;
 }
 .wrapper .page_content .pg_selected_block .multiselected_buttons .select .button_select {
-  padding: 4px 22px;
+  padding: 0.375rem 1.5rem;
   background-color: #F0F0F4;
   border-radius: 3px;
-  margin-right: 8px;
+  margin-right: 0.625rem;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #2F3035;
   opacity: 0.7;
 }
@@ -3306,16 +3252,15 @@ body {
 }
 .wrapper .page_content .pg_selected_block .multiselected_buttons .show_more_btn {
   display: none;
-  padding: 4px 22px;
+  padding: 0.375rem 1.5rem;
   background-color: #F0F0F4;
   border-radius: 3px;
-  margin-left: 8px;
   cursor: pointer;
   transition: all 0.3s ease 0s;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #2F3035;
   opacity: 0.7;
   max-height: 25px;
@@ -3329,7 +3274,7 @@ body {
 .wrapper .page_content .pg_selected_block .sorting_block {
   display: flex;
   justify-content: flex-end;
-  gap: 30px;
+  gap: 1.875rem;
 }
 @media (max-width: 576px) {
   .wrapper .page_content .pg_selected_block .sorting_block {
@@ -3343,13 +3288,13 @@ body {
   top: -8px;
 }
 .wrapper .page_content .pg_selected_block .sorting_block .dropdown .dropdown-btn {
-  padding: 8px 45px 8px 20px;
+  padding: 0.625rem 3.125rem 0.625rem 1.375rem;
   background: #ffffff;
   cursor: pointer;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #2F3035;
   border: 1.5px solid #D7D9DF;
   position: relative;
@@ -3382,19 +3327,19 @@ body {
   z-index: 101;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #2F3035;
   width: 100%;
   border: 1px solid #E0E0E0;
 }
 .wrapper .page_content .pg_selected_block .sorting_block .dropdown .dropdown-content .dropdown-item {
   width: 100%;
-  padding: 8px 20px;
+  padding: 0.5625rem 1.375rem;
   cursor: pointer;
 }
 .wrapper .page_content .pg_selected_block .sorting_block .dropdown .dropdown-content .dropdown-item:first-child {
-  margin-top: 15px;
+  margin-top: 1.0625rem;
 }
 .wrapper .page_content .pg_selected_block .sorting_block .dropdown .dropdown-content .dropdown-item:hover {
   background: rgba(107, 126, 172, 0.05);
@@ -3406,7 +3351,7 @@ body {
   display: flex;
   align-items: flex-start;
   flex: 0 0 auto;
-  gap: 10px;
+  gap: 0.625rem;
 }
 @media (max-width: 768px) {
   .wrapper .page_content .pg_selected_block .sorting_block .content_style {
@@ -3445,7 +3390,7 @@ body {
 .wrapper .page_content .pc_content {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
+  gap: 0.625rem;
   padding-top: 50px;
 }
 @media (max-width: 1200px) {
@@ -3461,7 +3406,7 @@ body {
 .wrapper .page_content .pc_content .catalog .catalog_items {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 1.875rem;
   justify-content: flex-start;
   align-content: flex-start;
 }
@@ -3472,7 +3417,7 @@ body {
 }
 @media (max-width: 992px) {
   .wrapper .page_content .pc_content .catalog .catalog_items {
-    gap: 10px;
+    gap: 0.625em;
     justify-content: space-between;
   }
 }
@@ -3601,49 +3546,11 @@ body {
 .wrapper .page_content .pc_content .catalog .navigation_block .navigation .navigation_list li .navigation_link:hover {
   text-shadow: 0 0 0.6px #2F3035, 0 0 0.6px #2F3035;
   color: #1C62CD;
-  /*&::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #1C62CD;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: #1C62CD;
-  }*/
 }
 .wrapper .page_content .pc_content .catalog .navigation_block .navigation .navigation_list li .navigation_link:hover span {
   position: relative;
   display: contents;
   flex: 0 0 auto;
-  /*&::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background-color: #1C62CD;
-  }
-
-  &::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background-color: #1C62CD;
-  }*/
 }
 .wrapper .page_content .pc_content .catalog .navigation_block .navigation .navigation_list li ._active {
   text-shadow: 0 0 0.6px #2F3035, 0 0 0.6px #2F3035;
@@ -3693,7 +3600,7 @@ body {
   padding-bottom: 80px;
   display: flex;
   justify-content: space-between;
-  gap: 100px;
+  gap: 6.25rem;
 }
 @media (max-width: 1200px) {
   .wrapper .page_content .cart_product {
@@ -3702,13 +3609,13 @@ body {
 }
 @media (max-width: 992px) {
   .wrapper .page_content .cart_product {
-    gap: 10px;
+    gap: 0.625em;
   }
 }
 @media (max-width: 576px) {
   .wrapper .page_content .cart_product {
     flex-direction: column;
-    gap: 30px;
+    gap: 1.875em;
   }
 }
 .wrapper .page_content .cart_product .cart_product_despription {
@@ -3735,8 +3642,8 @@ body {
 .wrapper .page_content .cart_product .cart_product_despription .product_code {
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
   color: #2F3035;
   opacity: 0.6;
   padding-top: 10px;
@@ -3755,7 +3662,7 @@ body {
 .wrapper .page_content .cart_product .cart_product_despription .interactive_elements {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 1.6875rem;
 }
 .wrapper .page_content .cart_product .cart_product_despription .interactive_elements .pg_item_like {
   position: relative;
@@ -3770,7 +3677,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
   cursor: pointer;
-  font-size: 28px;
+  font-size: 2rem;
   color: #ccc;
   transition: all 0.3s ease 0s;
 }
@@ -3799,7 +3706,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 2rem;
     padding-top: 0;
   }
 }
@@ -3824,7 +3731,7 @@ body {
   color: #2F3035;
   cursor: pointer;
   position: relative;
-  padding-right: 14px;
+  padding-right: 1rem;
   margin-right: 20px;
   opacity: 0.6;
   transition: all 0.3s ease 0s;
@@ -3891,7 +3798,7 @@ body {
   width: 70%;
   display: flex;
   flex-direction: column;
-  row-gap: 16px;
+  row-gap: 1.125rem;
 }
 .wrapper .page_content .cart_product .cart_product_despription .characteristics .tabs .tabs__content .cp_tab .characteristics_list li {
   display: flex;
@@ -3963,11 +3870,11 @@ body {
   flex-wrap: wrap;
   min-height: 70px;
   background-color: #F0F0F4;
-  gap: 20px;
+  gap: 1.25rem;
 }
 @media (max-width: 992px) {
   .wrapper .page_content .cart_product_information .tabs .tabs-nav {
-    gap: 10px;
+    gap: 0.625em;
   }
 }
 @media (max-width: 576px) {
@@ -3987,7 +3894,7 @@ body {
   opacity: 0.6;
   position: relative;
   transition: all 0.3s ease 0s;
-  padding: 5px 10px 5px 0;
+  padding: 0.4375rem 0.75rem 0.4375rem;
 }
 @media (max-width: 1200px) {
   .wrapper .page_content .cart_product_information .tabs .tabs-nav .cpi_tabs_nav__item {
@@ -4033,13 +3940,13 @@ body {
   visibility: visible;
 }
 .wrapper .page_content .cart_product_information .tabs .tabs__content {
-  padding-top: 25px;
+  padding-top: 1.6875rem;
 }
 .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab {
   display: none;
 }
 .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup {
-  padding-left: 25px;
+  padding-left: 1.6875rem;
 }
 @media (max-width: 992px) {
   .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup {
@@ -4052,11 +3959,11 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 150px;
+  gap: 10.625rem;
 }
 @media (max-width: 992px) {
   .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_form {
-    gap: 10px;
+    gap: 0.625em;
     justify-content: space-between;
   }
 }
@@ -4064,7 +3971,7 @@ body {
   .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_form {
     flex-direction: column;
     align-items: flex-start;
-    gap: 40px;
+    gap: 2.5em;
   }
 }
 @media (max-width: 768px) {
@@ -4074,13 +3981,13 @@ body {
 }
 .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_form ul:first-child li {
   display: flex;
-  gap: 15px;
+  gap: 1.0625rem;
   position: relative;
   align-items: center;
 }
 @media (max-width: 992px) {
   .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_form ul:first-child li {
-    gap: 10px;
+    gap: 0.625em;
   }
 }
 @media (max-width: 576px) {
@@ -4093,8 +4000,8 @@ body {
   clip: rect(1px, 1px, 1px, 1px);
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 1.1875rem;
+  line-height: 1.375rem;
   color: #6e6f72;
 }
 .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_form ul:first-child li input {
@@ -4103,13 +4010,13 @@ body {
 .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_form ul:first-child li .search-input {
   min-width: 310px;
   max-height: 33px;
-  padding: 15px 35px 15px 10px;
+  padding: 1.0625rem 2.3125rem 1.0625rem 0.75rem;
   background-color: #F0F0F4;
   border-radius: 3px;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
   color: #C4C4C4;
 }
 @media (max-width: 1200px) {
@@ -4149,21 +4056,21 @@ body {
 }
 .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_form ul:last-child li {
   display: flex;
-  gap: 55px;
+  gap: 3.75rem;
 }
 @media (max-width: 992px) {
   .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_form ul:last-child li {
-    gap: 30px;
+    gap: 1.875em;
   }
 }
 @media (max-width: 768px) {
   .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_form ul:last-child li {
-    gap: 55px;
+    gap: 3.4375em;
   }
 }
 @media (max-width: 576px) {
   .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_form ul:last-child li {
-    gap: 22px;
+    gap: 1.375em;
     flex-direction: column;
   }
 }
@@ -4190,11 +4097,11 @@ body {
 .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_form ul:last-child li .form__label .caption {
   font-style: normal;
   font-weight: 400;
-  font-size: 17px;
-  line-height: 20px;
+  font-size: 1.25rem;
+  line-height: 1.375rem;
   color: #6e6f72;
   display: block;
-  padding-left: 26px;
+  padding-left: 1.75rem;
 }
 @media (max-width: 576px) {
   .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_form ul:last-child li .form__label .caption {
@@ -4250,10 +4157,10 @@ body {
   align-items: center;
 }
 .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content {
-  padding-top: 50px;
+  padding-top: 3.4375rem;
   display: flex;
   flex-direction: column;
-  row-gap: 40px;
+  row-gap: 2.75rem;
 }
 @media (max-width: 768px) {
   .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content {
@@ -4265,7 +4172,7 @@ body {
   justify-content: space-between;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.125rem;
   line-height: 150%;
   color: #6e6f72;
   position: relative;
@@ -4293,7 +4200,7 @@ body {
 .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content .pc_content-item .working_mode .working_mode_list {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: 0.75rem;
 }
 .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content .pc_content-item .working_mode .working_mode_list li {
   display: flex;
@@ -4320,13 +4227,13 @@ body {
 }
 .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content .pc_content-item .btn_wrapper .pcc_item_buy_btn {
   display: block;
-  max-height: 35px;
+  max-height: 2.5rem;
   background-color: #1C62CD;
   border-radius: 3px;
-  padding: 10px 40px;
+  padding: 0.75rem 2.75rem;
   font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: 0.9375rem;
+  line-height: 1.125rem;
   letter-spacing: 0.12em;
   color: #fff;
   text-transform: uppercase;
@@ -4337,36 +4244,15 @@ body {
 }
 @media (max-width: 992px) {
   .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content .pc_content-item .btn_wrapper .pcc_item_buy_btn {
-    padding: 10px 20px;
+    padding: 0.625em 1.25em;
   }
 }
 .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content .item_title {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.4375rem;
+  line-height: 1.75rem;
   color: #2F3035;
-}
-.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile {
-  padding-top: 40px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 18px;
-  color: #6e6f72;
-  position: relative;
-}
-.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile::after {
-  content: "";
-  position: absolute;
-  bottom: -20px;
-  left: 0;
-  width: 100%;
-  height: 0.5px;
-  background-color: #C4C4C4;
 }
 @media (min-width: 768px) {
   .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile {
@@ -4375,62 +4261,87 @@ body {
 }
 @media (max-width: 768px) {
   .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile {
-    display: flex;
+    display: block;
   }
 }
-.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile > li {
+.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile .pcm_list {
+  padding-top: 2.75rem;
+  display: none;
+  flex-direction: column;
+  row-gap: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
+  color: #6e6f72;
+  position: relative;
+}
+.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile .pcm_list::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  height: 0.5px;
+  background-color: #C4C4C4;
+}
+.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile .pcm_list > li {
   display: flex;
 }
-.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile > li:nth-child(2) {
+.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile .pcm_list > li:nth-child(2) {
   flex-direction: column;
-  row-gap: 5px;
+  row-gap: 0.4375rem;
 }
-.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile > li .pcm_title {
+.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile .pcm_list > li .pcm_title {
   width: 50%;
   font-style: normal;
   font-weight: 700;
-  font-size: 15px;
-  line-height: 18px;
+  font-size: 1.0625rem;
+  line-height: 1.25rem;
   color: #2F3035;
 }
-.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile > li .pcm_address {
+.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile .pcm_list > li .pcm_address {
   width: 50%;
 }
-.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile > li .pcm_working_mode li {
+.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile .pcm_list > li .pcm_working_mode li {
   display: flex;
 }
-.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile > li .pcm_working_mode li p {
+.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile .pcm_list > li .pcm_working_mode li p {
   width: 50%;
 }
-.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile .pcm_item_buy_btn {
+.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile .pcm_list .pcm_item_buy_btn {
   display: block;
   max-width: 300px;
-  min-height: 50px;
+  min-height: 3.4375rem;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   text-align: center;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #fff;
-  padding: 17px 92px 15px;
+  padding: 1.1875rem 5.9375rem 1.0625rem;
   background-color: #1C62CD;
   transition: all 0.3s ease 0s;
-  margin-top: 20px;
+  margin-top: 1.375rem;
 }
-.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .show_all_shops_btn {
-  margin-top: 40px;
+.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile .is_visible {
+  display: flex;
+}
+.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile .show_all_shops_btn {
+  display: none;
+  margin-top: 2.75rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   text-decoration-line: underline;
   color: #1C62CD;
   background-color: transparent;
   position: relative;
 }
-.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .show_all_shops_btn::after {
+.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile .show_all_shops_btn::after {
   content: "";
   position: absolute;
   top: 7px;
@@ -4440,14 +4351,12 @@ body {
   height: 7px;
 }
 @media (min-width: 768px) {
-  .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .show_all_shops_btn {
+  .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile .show_all_shops_btn {
     display: none;
   }
 }
-@media (max-width: 768px) {
-  .wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .show_all_shops_btn {
-    display: flex;
-  }
+.wrapper .page_content .cart_product_information .tabs .tabs__content .cpi_tab .pickup .pickup_content_mobile .pcm_btn_is_active {
+  display: flex;
 }
 .wrapper .page_content .cart_product_information .tabs .tabs__content .is_active {
   display: block;
@@ -4457,17 +4366,6 @@ body {
   background-color: #F0F0F4;
   padding-top: 42px;
   position: relative;
-  /*@media (max-width: 992px) {
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 130px;
-      background-color: #fff;
-    }
-  }*/
 }
 @media (max-width: 1200px) {
   .wrapper .footer {
@@ -4482,11 +4380,11 @@ body {
 .wrapper .footer .footer_content {
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+  gap: 3.4375rem;
 }
 @media (min-width: 992px) {
   .wrapper .footer .footer_content {
-    padding: 0 15px;
+    padding: 0 1.0625rem;
     max-width: 1200px;
     margin: 0 auto;
   }
@@ -4500,7 +4398,7 @@ body {
   .wrapper .footer .footer_content {
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 0.75em;
     padding: 0;
     margin: auto;
   }
@@ -4508,7 +4406,7 @@ body {
 .wrapper .footer .footer_content .footer_subscription {
   display: flex;
   flex-direction: column;
-  row-gap: 34px;
+  row-gap: 2.25rem;
 }
 @media (min-width: 992px) {
   .wrapper .footer .footer_content .footer_subscription {
@@ -4522,15 +4420,15 @@ body {
 }
 @media (max-width: 992px) {
   .wrapper .footer .footer_content .footer_subscription {
-    row-gap: 17px;
+    row-gap: 1.0625em;
     margin-right: 0;
   }
 }
 .wrapper .footer .footer_content .footer_subscription h3 {
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #2F3035;
 }
 @media (max-width: 992px) {
@@ -4542,15 +4440,15 @@ body {
   position: relative;
   max-height: 33px;
   min-width: 300px;
-  margin-bottom: 40px;
+  margin-bottom: 2.75rem;
 }
 .wrapper .footer .footer_content .footer_subscription form input {
   width: 100%;
-  padding: 8px 12px 8px 12px;
+  padding: 0.625rem 0.875rem;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #C4C4C4;
 }
 .wrapper .footer .footer_content .footer_subscription form button {
@@ -4559,15 +4457,15 @@ body {
   right: 0;
   font-style: normal;
   font-weight: 600;
-  font-size: 11px;
-  line-height: 13px;
+  font-size: 0.8125rem;
+  line-height: 0.9375rem;
   text-align: center;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #fff;
   height: 100%;
   background-color: #1C62CD;
-  padding: 0 16px;
+  padding: 0 1.125rem;
   transition: all 0.3s ease 0s;
 }
 .wrapper .footer .footer_content .footer_subscription form button:hover {
@@ -4578,8 +4476,8 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
   flex: 1 0 340px;
-  column-gap: 10px;
-  row-gap: 30px;
+  column-gap: 0.75rem;
+  row-gap: 2.0625rem;
 }
 @media (max-width: 992px) {
   .wrapper .footer .footer_content .footer_links {
@@ -4592,7 +4490,7 @@ body {
   .wrapper .footer .footer_content .footer_links {
     flex-direction: column;
     align-items: center;
-    gap: 26px;
+    gap: 1.625em;
     min-width: 320px;
   }
 }
@@ -4628,27 +4526,27 @@ body {
   .wrapper .footer .footer_content .footer_links .footer_links_01, .wrapper .footer .footer_content .footer_links .footer_links_02 {
     width: 100%;
     text-align: start;
-    padding-left: 16px;
+    padding-left: 1.125em;
   }
 }
 .wrapper .footer .footer_content .footer_links .footer_links_01 .footer_links_item_title, .wrapper .footer .footer_content .footer_links .footer_links_02 .footer_links_item_title {
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #2F3035;
   position: relative;
   background-color: #F0F0F4;
   text-align: start;
-  padding-bottom: 10px;
+  padding-bottom: 0.75rem;
 }
 @media (max-width: 576px) {
   .wrapper .footer .footer_content .footer_links .footer_links_01 .footer_links_item_title, .wrapper .footer .footer_content .footer_links .footer_links_02 .footer_links_item_title {
     width: 100%;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 18px;
+    font-size: 1rem;
+    line-height: 1.25rem;
     letter-spacing: -0.0861538px;
     color: #7F7F7F;
     background-color: #F9F9FC;
@@ -4682,14 +4580,14 @@ body {
 }
 @media (max-width: 576px) {
   .wrapper .footer .footer_content .footer_links .footer_links_01 .fl_list, .wrapper .footer .footer_content .footer_links .footer_links_02 .fl_list {
-    row-gap: 10px;
+    row-gap: 0.625em;
   }
 }
 .wrapper .footer .footer_content .footer_links .footer_links_01 .fl_list .fl_link, .wrapper .footer .footer_content .footer_links .footer_links_02 .fl_list .fl_link {
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.25rem;
   color: #2F3035;
 }
 .wrapper .footer .footer_content .footer_links .footer_links_01 .fl_list .fl_link:hover, .wrapper .footer .footer_content .footer_links .footer_links_02 .fl_list .fl_link:hover {
@@ -4738,7 +4636,7 @@ body {
   padding-top: 40px;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 2.0625rem;
   z-index: 1;
 }
 @media (max-width: 1200px) {
@@ -4747,7 +4645,7 @@ body {
   }
 }
 .wrapper .footer .footer_content .footer_social .fs_text_links {
-  margin-top: 20px;
+  margin-top: 1.375rem;
   display: none;
   z-index: 1;
 }
